@@ -475,7 +475,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     continue
                 }
                 ++urlnum;
-                link = link + '<div class="link-box"><a href="' + obj[i][l]["url"] + '"><div class="link-icon" style="background-image:url(http://api.chairo.cc/get.php?url='+obj[i][l]["url"]+');"></div><div class="link-name">' + obj[i][l]["name"] + '</div><div class="link-explain">' + obj[i][l]["explain"] + '</div></a><div class="url-test" id="' + obj[i][l]["name"] + '" onclick="pingURL(this,\'' + obj[i][l]["url"] + '\')"><div class="url-B"></div>点我测试</div></div>';
+                link = link + '<div class="link-box"><a href="' + obj[i][l]["url"] + '"><div class="link-icon" style="background-image:url(https://api.chairo.cc/get.php?url='+obj[i][l]["url"]+');"></div><div class="link-name">' + obj[i][l]["name"] + '</div><div class="link-explain">' + obj[i][l]["explain"] + '</div></a><div class="url-test" id="' + obj[i][l]["name"] + '" onclick="pingURL(this,\'' + obj[i][l]["url"] + '\')"><div class="url-B"></div>点我测试</div></div>';
             }
             document.getElementById("linkbox").innerHTML += '<div class="partition"><div class="partition-name" id="' + i + '">- ' + i + ' -</div><div class="partition-box">' + link + '</div></div>'
         }
