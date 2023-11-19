@@ -6,6 +6,12 @@ Disallow: /javascript/
 Disallow: /list.json
 Disallow: /poster.json
 Disallow: /tool.html
+User-agent: Yandex
+Disallow: /css/
+Disallow: /javascript/
+Disallow: /list.json
+Disallow: /poster.json
+Disallow: /tool.html
 User-agent: Sogou web spider
 Disallow: /
 User-agent: Sosospider
@@ -33,8 +39,3 @@ Disallow: /
 Crawl-delay: 120
 User-agent: *
 Disallow: /
-Disallow: /css/
-Disallow: /javascript/
-Disallow: /list.json
-Disallow: /poster.json
-Disallow: /tool.html
