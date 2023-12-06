@@ -1,7 +1,7 @@
 {
     "友链":{
         "1": {"name": "呲哩呲哩","url":"http://www.cilicili.cc","explain":"cilicili 一个神奇的导航站"},
-        "2": {"name": "次元猫","url":"https://miaodh.net/","explain":"一个专注发现与收录ACG相关网站的导航站"},
+        "2": {"name": "Chnci","url":"https://www.chn.ci/","explain":"感受神秘的美好世界！"},
         "3": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "(●'◡'●)"}
     },
     "Animation": {
@@ -75,6 +75,7 @@
         "3": {"name": "Anime pictures","url": "https://anime-pictures.net/","explain": "[英文] 高清动漫图像板"},
         "4": {"name": "Wallpaper Abyss","url": "https://wall.alphacoders.com/","explain": "[英文] 高清壁纸图片站"},
         "5": {"name": "Sakanaaa","url": "https://www.sakanaaa.com/","explain": "ACG壁纸社区"},
+        "17": {"name": "Chnci","url": "https://www.chnci.cc/","explain": "[++] [会员制] 壁纸站，资源还不错"},
         "6": {"name": "Wallhaven","url": "https://wallhaven.cc","explain": "[需魔法][英文] 高质量壁纸收录站"},
         "7": {"name": "Pixiv","url": "https://www.pixiv.net","explain": "[需魔法] 全球最大的插画·同人作品交流网站"},
         "8": {"name": "Kemono","url": "https://kemono.party/","explain": "[R18][需魔法][英文] 同类型图片采集站"},
@@ -198,6 +199,13 @@
         "9": {"name": "Epic","url": "https://store.epicgames.com/","explain": "[需魔法] Epic官网"},
         "10": {"name": "Steam","url": "https://store.steampowered.com/","explain": "[需魔法] Steam官网"},
         "11": {"name": "EROLABS","url": "https://zodgame.ero-labs.io/","explain": "[R18][需魔法] 黄油 | H游戏"}
+    },
+    "卡牌·桌游·跑团":{
+        "1": {"name": "异界群敌","url": "http://zxcard.yimieji.com/","explain": "[++] Z/X卡牌查卡器"},
+        "2": {"name": "百鸽","url": "https://ygocdb.com/","explain": "[++] 游戏王卡片查询工具"},
+        "3": {"name": "Yugioh Card","url": "https://db.yugioh-card-cn.com/","explain": "[++] 游戏王卡牌查卡器"},
+        "4": {"name": "我们的OCG","url": "https://www.ourocg.cn/","explain": "[++] 游戏王卡牌查卡器"},
+        "5": {"name": "DB.DUELMETA","url": "https://db.duelmeta.com/","explain": "[++] 上位卡组库"}
     },
     "Shopping & Other":{
         "1": {"name": "米画师","url": "https://www.mihuashi.com/","explain": "美术外包交易平台，自由|高效|专业"},
