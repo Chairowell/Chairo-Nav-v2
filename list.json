@@ -7,6 +7,7 @@
     "Animation": {
         "1": {"name": "AGE动漫","url": "https://www.agemys.org/","explain": "急速，每日推荐100部番"},
         "2": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "干净，按周分类，看新番比较好用"},
+        "26": {"name": "ギリギリ爱动漫","url": "https://anime.girigirilove.com/","explain": "[++] 干净，新番多，支持弹幕"},
         "3": {"name": "五弹幕","url": "https://www.5dm.link/","explain": "干净の弹幕视频网"},
         "4": {"name": "LIBVIO","url": "https://www.libvio.me/","explain": "番、剧、影都包含，高清，速度快"},
         "5": {"name": "ebb","url": "https://ebb.io/","explain": "[需魔法] 干净速度快，有弹幕"},
@@ -14,8 +15,10 @@
         "7": {"name": "哔咪动漫","url": "https://www.bimiacg10.net/","explain": "M站 兴趣使然的动漫小站"},
         "8": {"name": "AcFun","url": "https://www.acfun.cn/","explain": "A站 认真你就输啦 (・ω・)"},
         "9": {"name": "bilibili","url": "https://www.bilibili.com/","explain": "B站 哔哩哔哩(゜-゜)つロ 干杯"},
+        "25": {"name": "Myself动漫","url": "https://myself-bbs.com/portal.php","explain": "[++] [需魔法] 建立时间比较长的番站"},
         "10": {"name": "樱花动漫","url": "https://www.yhdmgo.com/","explain": "模板站，质量一般，和同名网站类似"},
         "11": {"name": "樱花动漫","url": "https://www.dm295.com/","explain": "模板站，质量一般，和同名网站类似"},
+        "27": {"name": "樱花动漫","url": "https://www.816dm.com/","explain": "[++] 模板站，质量一般，和同名网站类似"},
         "12": {"name": "樱花动漫6","url": "https://yhdm6.top/","explain": "模板站，质量一般，和同名网站类似"},
         "13": {"name": "異世界動漫","url": "https://www.mikudm.com/","explain": "模板站，质量一般，和同名网站类似"},
         "14": {"name": "樱花动漫","url": "http://www.yhdm7.net/","explain": "模板站，质量一般，和同名网站类似"},
@@ -30,7 +33,7 @@
         "24": {"name": "Mucho Hentai","url": "https://muchohentai.com/home/","explain": "[R18][需魔法][英文] Hentai Anime"}
     },
     "SearchEngines": {
-        "1": {"name": "AniList","url": "https://anilist.co/","explain": "[英文] ACGNM关联搜索，干净全面"},
+        "1": {"name": "AniList","url": "https://anilist.co/","explain": "[英文] ACGN关联搜索，干净全面"},
         "2": {"name": "萌娘百科","url": "https://zh.moegirl.org.cn","explain": "万物皆可萌的百科全书"},
         "3": {"name": "MyAnimeList","url": "https://myanimelist.net/","explain": "[英文] 番剧图书馆，资料资讯超全"},
         "4": {"name": "SteamDB","url": "https://steamdb.info/search/","explain": "[英文] 搜索Steam游戏历史价格"},
@@ -67,11 +70,12 @@
         "13": {"name": "Wormhole","url": "https://wormhole.app/","explain": "[英文] 简单、私密的文件共享，公网P2P文件传输"},
         "14": {"name": "WebTorrent APP","url": "https://webtorrent.io/","explain": "[英文] 视频种子文件流观看软件"},
         "15": {"name": "Snapdrop","url": "https://snapdrop.net/","explain": "局域网P2P文件传输"},
-        "16": {"name": "EhSyringe","url": "https://github.com/EhTagTranslation/EhSyringe","explain": "[汉化插件]E站注射器，这一针打下去你就会说中文了"}
+        "16": {"name": "EhSyringe","url": "https://github.com/EhTagTranslation/EhSyringe","explain": "[汉化插件] E站注射器，这一针打下去你就会说中文了"}
     },
     "Wallpaper": {
-        "1": {"name": "触站","url": "https://www.huashi6.com/","explain": "原创画师分享平台"},
         "2": {"name": "Zerochan","url": "https://www.zerochan.net/","explain": "[英文] 动漫图片和壁纸给大家"},
+        "1": {"name": "触站","url": "https://www.huashi6.com/","explain": "原创画师分享平台"},
+        "18": {"name": "LOFTER","url": "https://www.lofter.com/","explain": "[++] [会员制] 专注于图片社交的平台"},
         "3": {"name": "Anime pictures","url": "https://anime-pictures.net/","explain": "[英文] 高清动漫图像板"},
         "4": {"name": "Wallpaper Abyss","url": "https://wall.alphacoders.com/","explain": "[英文] 高清壁纸图片站"},
         "5": {"name": "Sakanaaa","url": "https://www.sakanaaa.com/","explain": "ACG壁纸社区"},
@@ -88,30 +92,37 @@
         "15": {"name": "Danbooru","url": "https://danbooru.donmai.us/","explain": "[R18][需魔法][英文] 同类型图片采集站"},
         "16": {"name": "Sankakucomplex","url": "https://chan.sankakucomplex.com/cn/","explain": "[R18][需魔法][英文] 同类型图片采集站"}
     },
-    "Music & ASMR & Novel & Manga & HBook": {
+    "Music & ASMR": {
         "1": {"name": "Bui~","url": "https://biu.moe","explain": "收录和下载超高质量ACG音乐"},
         "2": {"name": "BeatStage","url": "https://www.beatstage.com","explain": "国内第一个开放式网页音游"},
+        "12": {"name": "Mikutap","url": "https://aidn.jp/mikutap/","explain": "[++] Miku音游"},
         "3": {"name": "OSU! 戳泡泡","url": "http://osugame.online/","explain": "OSU!节奏跃然指上！网页版"},
         "4": {"name": "AMQ","url": "https://animemusicquiz.com/","explain": "[需魔法][英文] 听歌猜番！测测你的实力"},
         "5": {"name": "猫耳FM","url": "https://www.missevan.com","explain": "有声轻小说，声优聚集地"},
+        "11": {"name": "Last.fm","url": "https://www.last.fm/","explain": "[++] [英文] 全球音乐"},
+        "13": {"name": "Radio Garden","url": "https://radio.garden/","explain": "[++] [需魔法][英文] 在线全球广播电台"},
         "6": {"name": "SoundCloud","url": "https://soundcloud.com/","explain": "[需魔法][英文] 音乐人聚集地"},
         "7": {"name": "ASMR Online","url": "https://asmr.one/works","explain": "[R18] 耳朵怀孕，颅内高潮！"},
         "8": {"name": "ASMR基佬中心","url": "https://www.asmrgay.com/","explain": "[R18] 千万千万不要在人多的地方听！"},
         "9": {"name": "织音馆","url": "https://rainkmc.com/forum.php?mod=forumdisplay&fid=40","explain": "[R18] ASMR社群"},
-        "10": {"name": "ASMR盒子","url": "https://asmrbox.xyz/","explain": "[R18][需魔法] 免费海量高品质的ASMR视频音频资源"},
+        "10": {"name": "ASMR盒子","url": "https://asmrbox.xyz/","explain": "[R18][需魔法] 免费海量高品质的ASMR视频音频资源"}
+    },
+    "Novel & Manga & HBook": {
         "11": {"name": "轻之文库","url": "https://www.linovel.net/","explain": "懂阅读更懂创作的轻小说平台"},
         "12": {"name": "轻之国度","url": "https://www.lightnovel.us/","explain": "专注分享的NACG社群"},
         "13": {"name": "哔哩轻小说","url": "https://www.linovelib.com/","explain": "日本动漫轻小说在线阅读"},
         "14": {"name": "ESJ Zone","url": "https://www.esjzone.me/","explain": "轻小说在线阅读"},
+        "39": {"name": "铅笔小说","url": "https://www.23qb.com/","explain": "[++] 轻小说在线阅读，TXT电子下载"},
         "15": {"name": "圖書館的無限迴廊","url": "https://epub.love/","explain": "轻小说EPUB格式下载"},
-        "16": {"name": "真白萌","url": "https://masiro.me","explain": "会员制轻小说下载"},
-        "17": {"name": "百合会","url": "https://www.yamibo.com/site/novel","explain": "会员制轻小说阅读"},
+        "16": {"name": "真白萌","url": "https://masiro.me","explain": "[会员制] 轻小说下载"},
+        "17": {"name": "百合会","url": "https://www.yamibo.com/site/novel","explain": "[会员制] 轻小说阅读"},
         "18": {"name": "可穿戴科技","url": "https://wt.tepis.me/","explain": "[R18] 线上阅读"},
         "19": {"name": "快看漫画","url": "https://www.kuaikanmanhua.com/","explain": "原创国漫大全免费在线观看"},
         "20": {"name": "哔哩哔哩漫画","url": "https://manga.bilibili.com/","explain": "正版漫画平台"},
         "21": {"name": "动漫之家","url": "https://www.idmzj.com/","explain": "收录最全的漫画观看平台"},
-        "22": {"name": "Kox.moe","url": "http://kox.moe/","explain": "Kindle漫畫|Kobo漫畫|epub漫畫"},
-        "23": {"name": "漫自由","url": "https://mhx12.com/","explain": "epub漫畫Kindle漫畫下载"},
+        "22": {"name": "Kox.moe","url": "http://kox.moe/","explain": "mobi漫畫|epub漫畫"},
+        "23": {"name": "漫自由","url": "https://mhx12.com/","explain": "epub漫畫|mobi漫畫下载"},
+        "38": {"name": "知道漫画补档区","url": "https://kindle.smgzd.com/","explain": "[++] mobi漫畫|电子版漫画下载"},
         "24": {"name": "动漫屋","url": "https://www.dm5.com/","explain": "为看漫画的人而生"},
         "25": {"name": "二次元動漫","url": "https://www.2animx.com/","explain": "免費在線漫畫網站"},
         "26": {"name": "腾讯动漫","url": "https://ac.qq.com/","explain": "腾讯动漫官方网站"},
@@ -175,6 +186,7 @@
         "5": {"name": "琉璃神社★","url": "https://hacg.dad/","explain": "分享动漫快乐"},
         "6": {"name": "好萌次元","url": "https://nicemoe.us/","explain": "欢迎来搜集整理各类ACG资源"},
         "7": {"name": "Stage1st","url": "https://bbs.saraba1st.com","explain": "游戏动漫论坛"},
+        "19": {"name": "初音社","url": "https://www.mikuclub.win/","explain": "[++] MMD和VOCALOID社区"},
         "8": {"name": "翼の夢🌈舞の城","url": "http://www.otomedream.com/","explain": "ACG动漫游戏社区"},
         "9": {"name": "Cosplay啦","url": "https://www.cosplayla.com/","explain": "二次元cosplay摄影|宣传"},
         "10": {"name": "Cos站","url": "https://www.cosz.com/","explain": "属于你的cosplay社区"},
@@ -190,9 +202,10 @@
     "Games":{
         "1": {"name": "SteamDB","url": "https://steamdb.info/search/","explain": "[英文] 搜索Steam游戏历史价格"},
         "2": {"name": "My galgame","url": "https://www.ttloli.com/","explain": "最大的Galgame攻略+汉化下载"},
-        "3": {"name": "Migu云游","url": "https://www.migufun.com/","explain": "当个“云”玩家"},
+        "12": {"name": "Yikm","url": "https://www.yikm.net/","explain": "[++] 小霸王|红白机|街机游戏|NES在线玩"},
         "4": {"name": "Watt Toolkit","url": "https://steampp.net/","explain": "原名Steam++ 挂卡、加速、插件工具"},
         "5": {"name": "小黑盒","url": "https://xiaoheihe.cn/games/index","explain": "高能玩家聚集地"},
+        "3": {"name": "Migu云游","url": "https://www.migufun.com/","explain": "当个“云”玩家"},
         "6": {"name": "2DFan","url": "https://2dfan.org/","explain": "专注于提供日本游戏攻略资讯"},
         "7": {"name": "UPUPO","url": "https://www.upupuo.com/","explain": "游戏资讯站"},
         "8": {"name": "FlappyPaimon","url": "https://www.evkworld.net/g/yqi7na","explain": "飞翔的派蒙网页版"},
@@ -208,12 +221,18 @@
         "5": {"name": "DB.DUELMETA","url": "https://db.duelmeta.com/","explain": "[++] 上位卡组库"}
     },
     "Shopping & Other":{
+        "5": {"name": "Masadora","url": "https://www.masadora.jp/","explain": "[++] 魔法集市，海淘代购同人周边"},
         "1": {"name": "米画师","url": "https://www.mihuashi.com/","explain": "美术外包交易平台，自由|高效|专业"},
         "2": {"name": "CPP","url": "https://www.allcpp.cn/allcpp/event/eventlist.do","explain": "CP同人展购票|各地展会信息"},
-        "3": {"name": "live2d.jp","url": "https://www.live2d.jp/","explain": "Live2D皮套外包"},
+        "8": {"name": "あみあみ","url": "https://www.amiami.jp/","explain": "[++] 同人誌通販・オンライン本店"},
+        "6": {"name": "メロンブックス","url": "https://www.melonbooks.co.jp/","explain": "[++] 同人誌通販・同人ゲームや漫画の販売購入"},
+        "10": {"name": "Alphamax","url": "https://alphamax.jp/zh-CN/","explain": "[++] 同人誌通販"},
+        "9": {"name": "F:NEX","url": "https://fnex.jp/","explain": "[++] 同人誌・同人グッズ通販"},
+        "3": {"name": "广州天闻角川","url": "http://www.gztwkadokawa.com/","explain": "[++] [需魔法] 轻小说|漫画|书籍|杂志购买"},
+        "7": {"name": "とらのあな","url": "https://ec.toranoana.jp/","explain": "[++] [需魔法] 同人誌・同人グッズ通販"},
         "4": {"name": "模之屋","url": "https://www.aplaybox.com/","explain": "专业模型创作分享站"}
     },
-    "生肉资源":{
+    "生肉资源 - 默认需魔法":{
         "1": {"name": "ABEMA","url": "https://abema.tv","explain": "無料動画・24時間無料!"},
         "2": {"name": "ニコニコ","url": "https://www.nicovideo.jp","explain": "日本最大級の動画生放送組"},
         "3": {"name": "FOD","url": "https://fod.fujitv.co.jp","explain": "人気のアニメ放送中！"},
