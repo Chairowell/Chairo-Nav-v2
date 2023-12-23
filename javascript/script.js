@@ -367,7 +367,7 @@ if(window.location.hash == "#R18-CLOSE"){
 }
 document.addEventListener('DOMContentLoaded', function () {
     
-    fetch('./poster.json')
+    fetch('https://raw.gitmirror.com/Chairowell/Pictures-BED/main/poster.json')
     .then((response) => response.json())
     .then((json) => {
         const data = json;

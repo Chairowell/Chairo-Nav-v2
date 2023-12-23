@@ -1,15 +1,15 @@
 {
     "友链":{
         "1": {"name": "呲哩呲哩","url":"http://www.cilicili.cc","explain":"cilicili 一个神奇的导航站"},
-        "2": {"name": "Chnci","url":"https://www.chn.ci/","explain":"感受神秘的美好世界！"},
-        "3": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "(●'◡'●)"}
+        "2": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "(●'◡'●)"},
+        "3": {"name": "Chnci","url":"https://www.chn.ci/","explain":"感受神秘的美好世界！"}
     },
     "Animation": {
-        "1": {"name": "AGE动漫","url": "https://www.agemys.org/","explain": "急速，每日推荐100部番"},
+        "1": {"name": "AGE动漫","url": "https://www.agedm.org","explain": "急速，每日推荐100部番"},
         "2": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "干净，按周分类，看新番比较好用"},
         "26": {"name": "ギリギリ爱动漫","url": "https://anime.girigirilove.com/","explain": "[++] 干净，新番多，支持弹幕"},
         "3": {"name": "五弹幕","url": "https://www.5dm.link/","explain": "干净の弹幕视频网"},
-        "4": {"name": "LIBVIO","url": "https://www.libvio.me/","explain": "番、剧、影都包含，高清，速度快"},
+        "4": {"name": "LIBVIO","url": "https://www.libvio.pro/","explain": "番、剧、影都包含，高清，速度快"},
         "5": {"name": "ebb","url": "https://ebb.io/","explain": "[需魔法] 干净速度快，有弹幕"},
         "6": {"name": "pilipili","url": "http://www.pilipili.in/","explain": "P站 兴趣使然的动漫小站"},
         "7": {"name": "哔咪动漫","url": "https://www.bimiacg10.net/","explain": "M站 兴趣使然的动漫小站"},
@@ -59,8 +59,6 @@
         "2": {"name": "颜文字屋さん","url": "http://kaomojiya.com/","explain": "顔文字一覧"},
         "3": {"name": "Waifu 2x","url": "https://waifu2x.udp.jp/","explain": "卷积神经网络二次元图片放大"},
         "4": {"name": "unlimited","url": "https://unlimited.waifu2x.net/","explain": "新版Waifu，支持4x多参数放大"},
-        "5": {"name": "提瓦特大地图","url": "https://webstatic.mihoyo.com/ys/app/interactive-map","explain": "原神在线地图工具"},
-        "6": {"name": "Star Rail Station Wiki","url": "https://starrailstation.com/cn","explain": "崩坏·星穹铁道玩家工具"},
         "7": {"name": "唧唧","url": "https://www.jijidown.com/","explain": "B站视频|弹幕在线下载"},
         "8": {"name": "解析下载","url": "https://bili.iiilab.com/","explain": "多平台视频在线下载"},
         "9": {"name": "NovelAI魔导书","url": "https://thereisnospon.github.io/NovelAiTag/","explain": "用于NovelAI作画生成TAG"},
@@ -82,6 +80,7 @@
         "17": {"name": "Chnci","url": "https://www.chnci.cc/","explain": "[++] [会员制] 壁纸站，资源还不错"},
         "6": {"name": "Wallhaven","url": "https://wallhaven.cc","explain": "[需魔法][英文] 高质量壁纸收录站"},
         "7": {"name": "Pixiv","url": "https://www.pixiv.net","explain": "[需魔法] 全球最大的插画·同人作品交流网站"},
+        "19": {"name": "Picrew","url": "https://picrew.me/ja/","explain": "[++][需魔法] OC捏人，利用画师所给贴图重新捏"},
         "8": {"name": "Kemono","url": "https://kemono.party/","explain": "[R18][需魔法][英文] 同类型图片采集站"},
         "9": {"name": "Gelbooru","url": "https://gelbooru.com/","explain": "[R18][需魔法][英文] 同类型图片采集站"},
         "10": {"name": "Illusion Cards","url": "https://illusioncards.booru.org/","explain": "[R18][需魔法][英文] 同类型图片采集站"},
@@ -96,7 +95,8 @@
         "1": {"name": "Bui~","url": "https://biu.moe","explain": "收录和下载超高质量ACG音乐"},
         "2": {"name": "BeatStage","url": "https://www.beatstage.com","explain": "国内第一个开放式网页音游"},
         "12": {"name": "Mikutap","url": "https://aidn.jp/mikutap/","explain": "[++] Miku音游"},
-        "3": {"name": "OSU! 戳泡泡","url": "http://osugame.online/","explain": "OSU!节奏跃然指上！网页版"},
+        "3": {"name": "OSU! 戳泡泡","url": "http://osugame.online/","explain": "[已挂，等待修复] OSU!节奏跃然指上！网页版"},
+        "14": {"name": "OSU! 戳泡泡","url": "https://webosu.online/","explain": "OSU!节奏跃然指上！网页版"},
         "4": {"name": "AMQ","url": "https://animemusicquiz.com/","explain": "[需魔法][英文] 听歌猜番！测测你的实力"},
         "5": {"name": "猫耳FM","url": "https://www.missevan.com","explain": "有声轻小说，声优聚集地"},
         "11": {"name": "Last.fm","url": "https://www.last.fm/","explain": "[++] [英文] 全球音乐"},
@@ -167,6 +167,8 @@
         "1": {"name": "YuC","url": "https://yuc.wiki/","explain": "長門有C，最快最全的新番表"},
         "2": {"name": "Hazx新番表","url": "https://xf.hmacg.cn/","explain": "动漫新番表 | 图片 | Excel"},
         "3": {"name": "Anime News Network","url": "https://www.animenewsnetwork.com/","explain": "[英文] ACG各类新闻资讯"},
+        "14": {"name": "Animetox","url": "https://acg17.com/","explain": "[++] ACG资讯速报"}, 
+        "15": {"name": "Animetox","url": "https://www.animetox.com/","explain": "[++] 二次元及日本文化最速报"}, 
         "4": {"name": "Anime List","url": "https://acgntaiwan.github.io/Anime-List/","explain": "台北动漫新番表 | 瀑布流 | 简介"},
         "5": {"name": "Anime Data","url": "https://anime-data.com/","explain": "动画数据"},
         "6": {"name": "番组放送","url": "https://bgmlist.com/","explain": "每日放送表"},
@@ -201,8 +203,11 @@
     },
     "Games":{
         "1": {"name": "SteamDB","url": "https://steamdb.info/search/","explain": "[英文] 搜索Steam游戏历史价格"},
+        "13": {"name": "提瓦特大地图","url": "https://webstatic.mihoyo.com/ys/app/interactive-map","explain": "原神在线地图工具"},
+        "14": {"name": "Star Rail Station Wiki","url": "https://starrailstation.com/cn","explain": "崩坏·星穹铁道玩家工具"},
         "2": {"name": "My galgame","url": "https://www.ttloli.com/","explain": "最大的Galgame攻略+汉化下载"},
-        "12": {"name": "Yikm","url": "https://www.yikm.net/","explain": "[++] 小霸王|红白机|街机游戏|NES在线玩"},
+        "15": {"name": "桌游合集","url": "https://game.hullqin.cn/","explain": "[++] [可联机]线上线下多人聚会桌游合集"},
+        "12": {"name": "Yikm","url": "https://www.yikm.net/","explain": "[++] [可联机]小霸王|红白机|街机游戏|NES在线玩"},
         "4": {"name": "Watt Toolkit","url": "https://steampp.net/","explain": "原名Steam++ 挂卡、加速、插件工具"},
         "5": {"name": "小黑盒","url": "https://xiaoheihe.cn/games/index","explain": "高能玩家聚集地"},
         "3": {"name": "Migu云游","url": "https://www.migufun.com/","explain": "当个“云”玩家"},
@@ -213,7 +218,7 @@
         "10": {"name": "Steam","url": "https://store.steampowered.com/","explain": "[需魔法] Steam官网"},
         "11": {"name": "EROLABS","url": "https://zodgame.ero-labs.io/","explain": "[R18][需魔法] 黄油 | H游戏"}
     },
-    "卡牌·桌游·跑团":{
+    "卡牌 · 桌游 · 跑团":{
         "1": {"name": "异界群敌","url": "http://zxcard.yimieji.com/","explain": "[++] Z/X卡牌查卡器"},
         "2": {"name": "百鸽","url": "https://ygocdb.com/","explain": "[++] 游戏王卡片查询工具"},
         "3": {"name": "Yugioh Card","url": "https://db.yugioh-card-cn.com/","explain": "[++] 游戏王卡牌查卡器"},
