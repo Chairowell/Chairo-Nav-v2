@@ -367,7 +367,7 @@ if(window.location.hash == "#R18-CLOSE"){
 }
 document.addEventListener('DOMContentLoaded', function () {
     
-    fetch('https://raw.gitmirror.com/Chairowell/Pictures-BED/main/festival/newyear/poster.json')
+    fetch('https://raw.gitmirror.com/Chairowell/Pictures-BED/main/2024-01-C/poster.json')
     .then((response) => response.json())
     .then((json) => {
         const data = json;
