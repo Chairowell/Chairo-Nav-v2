@@ -367,7 +367,7 @@ if(window.location.hash == "#R18-CLOSE"){
 }
 document.addEventListener('DOMContentLoaded', function () {
     
-    fetch('https://raw.gitmirror.com/Chairowell/Pictures-BED/main/2024-01-C/poster.json')
+    fetch(posterAddress)
     .then((response) => response.json())
     .then((json) => {
         const data = json;
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', function () {
         bg.style.backgroundImage = 'url('+data['poster'][bgNum]+')';
     });
     
-    fetch('./list.json')
+    fetch(listAddress)
     .then((response) => response.json())
     .then((json) => {
         const obj = json;
