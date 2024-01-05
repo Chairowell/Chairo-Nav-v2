@@ -410,12 +410,15 @@ nav a:hover{
 @keyframes fontcolor{
 	0%{
 		color: #000;
+		text-shadow: #fff 0px 0px 12px;
 	}
 	50%{
 		color: #fff;
+		text-shadow: #000 0px 0px 12px;
 	}
 	100%{
 		color: #000;
+		text-shadow: #fff 0px 0px 12px;
 	}
 }
 #linkbox{
