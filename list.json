@@ -2,13 +2,14 @@
     "友链":{
         "1": {"name": "呲哩呲哩","url":"http://www.cilicili.cc","explain":"cilicili 一个神奇的导航站"},
         "2": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "(●'◡'●)"},
-        "3": {"name": "Chnci","url":"https://www.chn.ci/","explain":"感受神秘的美好世界！"}
+        "3": {"name": "Chnci","url":"https://www.chn.ci/","explain":"感受神秘的美好世界！"},
+        "4": {"name": "Ycfun","url":"https://www.ycfun.top/","explain":"用爱发电ACG一直在一起"}
     },
     "Animation": {
         "1": {"name": "AGE动漫","url": "https://www.agedm.org","explain": "急速，每日推荐100部番"},
         "2": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "干净，按周分类，看新番比较好用"},
         "3": {"name": "LIBVIO","url": "https://www.libvio.pro/","explain": "番、剧、影都包含，高清，速度快"},
-        "4": {"name": "girigiri愛動漫","url": "https://anime.girigirilove.com//","explain": "[++] Σ(っ °Д °;)っ∇讓世界更萌"},
+        "4": {"name": "girigiri愛動漫","url": "https://anime.girigirilove.com/","explain": "[++] Σ(っ °Д °;)っ∇讓世界更萌"},
         "5": {"name": "五弹幕","url": "https://www.5dm.link/","explain": "干净の弹幕视频网"},
         "6": {"name": "ebb","url": "https://ebb.io/","explain": "[需魔法] 干净速度快，有弹幕"},
         "7": {"name": "pilipili","url": "http://www.pilipili.in/","explain": "P站 兴趣使然的动漫小站"},
@@ -20,6 +21,7 @@
         "13": {"name": "樱花动漫","url": "https://www.yhdmgo.com/","explain": "模板站，质量一般，和同名网站类似"},
         "14": {"name": "樱花动漫","url": "https://www.dm295.com/","explain": "模板站，质量一般，和同名网站类似"},
         "15": {"name": "樱花动漫","url": "https://www.816dm.com/","explain": "模板站，质量一般，和同名网站类似"},
+        "28": {"name": "吐槽弹幕网","url": "https://www.tucao.pro/","explain": "[++] 分区种类多，速度一般，有较多视频失效"},
         "16": {"name": "樱花动漫6","url": "https://yhdm6.top/","explain": "模板站，质量一般，和同名网站类似"},
         "17": {"name": "異世界動漫","url": "https://www.mikudm.com/","explain": "模板站，质量一般，和同名网站类似"},
         "18": {"name": "樱花动漫","url": "http://www.yhdm7.net/","explain": "模板站，质量一般，和同名网站类似"},
@@ -80,6 +82,7 @@
         "4": {"name": "Anime pictures","url": "https://anime-pictures.net/","explain": "[英文] 高清动漫图像板"},
         "5": {"name": "Wallpaper Abyss","url": "https://wall.alphacoders.com/","explain": "[英文] 高清壁纸图片站"},
         "6": {"name": "Sakanaaa","url": "https://www.sakanaaa.com/","explain": "ACG壁纸社区"},
+        "22": {"name": "Ycfun","url":"https://www.ycfun.top/","explain":"[++] [需魔法] 免费的动漫壁纸网站"},
         "7": {"name": "Chnci","url": "https://www.chnci.cc/","explain": "[会员制] 壁纸站，资源还不错"},
         "8": {"name": "Wallhaven","url": "https://wallhaven.cc","explain": "[需魔法][英文] 高质量壁纸收录站"},
         "9": {"name": "Pixiv","url": "https://www.pixiv.net","explain": "[需魔法] 全球最大的插画·同人作品交流网站"},
