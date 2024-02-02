@@ -385,7 +385,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const box = document.querySelector('#linkbox');
         const r18 = getCookie("R18-VIEW");
         var urlnum = 0;
+        var newnum = 0;
         var group = '';
+        var newgroup = '';
         for(i in obj){
             var linkBox = '';
             for(l in obj[i]){
@@ -394,7 +396,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 var explain = obj[i][l]["explain"];
                 // 剔除R18
                 if(!explain.indexOf("[R18]") & r18 == "0"){
-                    continue
+                    continue;
+                }
+                if(!explain.indexOf("[++]")){
+                    newgroup = `
+                        ${newgroup}
+                        <div class="link-box" data-umami-event="${link}">
+                            <a href="${link}" rel="nofollow noopener noreferrer">
+                                <div class="link-icon" style="background-image:url(https://api.chairo.cc/get.php?url=${link});"></div>
+                                <div class="link-name">${name}</div>
+                                <div class="link-explain">${explain}</div>
+                            </a>
+                            <div class="url-test" id="${name}" onclick="pingURL(this,'${link}')">
+                                <div class="url-B">
+                            </div>点我测试</div>
+                        </div>
+                    `;
+                    ++newnum;
+                    // 是否开启更新进入分类
+                    // ++urlnum;
+                    // continue;
                 }
                 ++urlnum;
                 linkBox = `
@@ -419,6 +440,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             `;
         }
+        group = `
+            <div class="partition">
+                <div class="partition-name" id="newgroup">- 最近更新 ${newnum} -</div>
+                <div class="partition-box">${newgroup}</div>
+            </div>
+            ${group}
+        `
         box.innerHTML = group;
         document.getElementById("url-number").innerText = urlnum; //网址数量
         document.getElementById("music-number").innerText = maximum - minimum; //歌曲数量
