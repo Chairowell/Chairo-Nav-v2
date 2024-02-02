@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 linkBox = `
                     ${linkBox}
                     <div class="link-box" data-umami-event="${link}">
-                        <a href="${link}">
+                        <a href="${link}" rel="nofollow noopener noreferrer">
                             <div class="link-icon" style="background-image:url(https://api.chairo.cc/get.php?url=${link});"></div>
                             <div class="link-name">${name}</div>
                             <div class="link-explain">${explain}</div>
