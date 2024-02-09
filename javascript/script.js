@@ -373,17 +373,20 @@ document.addEventListener('DOMContentLoaded', function () {
         const data = json;
         const allNum = data['poster'].length;
 
-        if(getCookie("bgNumber") == null || parseInt(getCookie("bgNumber")) >= allNum){
+        if(getCookie("bgNumber") == null || parseInt(getCookie("bgNumber")) > allNum || parseInt(getCookie("bgNumber")) < 0){
+            var bgNum = getRandomNumber(0,allNum);
             setCookie("bgNumber","0");
         }
-        var bgNum = parseInt(getCookie("bgNumber"));
+        else{
+            var bgNum = parseInt(getCookie("bgNumber")) - 1;
+        }
 
         // var bgNum = getRandomNumber(0,allNum);
         const bg = document.querySelector('#background')
         document.getElementById("poster-number").innerText = allNum; //壁纸数量
         bg.style.backgroundImage = 'url('+data['poster'][bgNum]+')';
 
-        setCookie("bgNumber",(bgNum + 1).toString())
+        setCookie("bgNumber",(parseInt(getCookie("bgNumber"))+ 1).toString())
     });
     
     fetch(listAddress)
