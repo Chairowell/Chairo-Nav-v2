@@ -371,11 +371,19 @@ document.addEventListener('DOMContentLoaded', function () {
     .then((response) => response.json())
     .then((json) => {
         const data = json;
-        const allNum = data['poster'].length;     
-        var bgNum = getRandomNumber(0,allNum);
+        const allNum = data['poster'].length;
+
+        if(getCookie("bgNumber") == null || parseInt(getCookie("bgNumber")) >= allNum){
+            setCookie("bgNumber","0");
+        }
+        var bgNum = parseInt(getCookie("bgNumber"));
+
+        // var bgNum = getRandomNumber(0,allNum);
         const bg = document.querySelector('#background')
         document.getElementById("poster-number").innerText = allNum; //壁纸数量
         bg.style.backgroundImage = 'url('+data['poster'][bgNum]+')';
+
+        setCookie("bgNumber",(bgNum + 1).toString())
     });
     
     fetch(listAddress)
