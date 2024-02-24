@@ -186,7 +186,7 @@
         "1": {"name": "YuC","url": "https://yuc.wiki/","explain": "長門有C，最快最全的新番表"},
         "2": {"name": "Hazx新番表","url": "https://xf.hmacg.cn/","explain": "动漫新番表 | 图片 | Excel"},
         "3": {"name": "Anime News Network","url": "https://www.animenewsnetwork.com/","explain": "[英文] ACG各类新闻资讯"},
-        "4": {"name": "Animetox","url": "https://acg17.com/","explain": "ACG资讯速报"}, 
+        "4": {"name": "ACG17","url": "https://acg17.com/","explain": "ACG资讯速报"}, 
         "5": {"name": "Animetox","url": "https://www.animetox.com/","explain": "二次元及日本文化最速报"}, 
         "6": {"name": "Anime List","url": "https://acgntaiwan.github.io/Anime-List/","explain": "台北动漫新番表 | 瀑布流 | 简介"},
         "7": {"name": "Anime Data","url": "https://anime-data.com/","explain": "动画数据"},
