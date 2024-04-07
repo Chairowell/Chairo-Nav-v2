@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // var bgNum = getRandomNumber(0,allNum);
         const bg = document.querySelector('#background')
         document.getElementById("poster-number").innerText = allNum; //壁纸数量
-        bg.style.backgroundImage = 'url('+data['poster'][bgNum]+')';
+        bg.style.backgroundImage = 'url(https://img.picgo.net/2024/04/07/536b9ee68eb212bfdb0cc47d5740e35f15030057601986d40101b9.jpeg)';
 
         setCookie("bgNumber",(parseInt(getCookie("bgNumber"))+ 1).toString())
     });
