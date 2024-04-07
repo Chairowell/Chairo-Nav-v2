@@ -2,9 +2,8 @@
     "友链":{
         "1": {"name": "呲哩呲哩","url":"http://www.cilicili.cc","explain":"cilicili 一个神奇的导航站"},
         "2": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "(●'◡'●)"},
-        "3": {"name": "Chnci","url":"https://www.chn.ci/","explain":"感受神秘的美好世界！"},
-        "4": {"name": "girigiri愛動漫","url": "https://anime.girigirilove.com/","explain": "Σ(っ °Д °;)っ∇讓世界更萌"},
-        "5": {"name": "Ycfun","url":"https://www.ycfun.top/","explain":"用爱发电ACG一直在一起"}
+        "4": {"name": "Chnci","url":"https://www.chn.ci/","explain":"感受神秘的美好世界！"},
+        "3": {"name": "Ycfun","url":"https://www.ycfun.top/","explain":"用爱发电ACG一直在一起"}
     },
     "Animation": {
         "1": {"name": "AGE动漫","url": "https://www.agedm.org","explain": "急速，每日推荐100部番"},
