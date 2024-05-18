@@ -367,27 +367,27 @@ if(window.location.hash == "#R18-CLOSE"){
 }
 document.addEventListener('DOMContentLoaded', function () {
     
-    fetch(posterAddress)
-    .then((response) => response.json())
-    .then((json) => {
-        const data = json;
-        const allNum = data['poster'].length;
+    // fetch(posterAddress)
+    // .then((response) => response.json())
+    // .then((json) => {
+    //     const data = json;
+    //     const allNum = data['poster'].length;
 
-        if(getCookie("bgNumber") == null || parseInt(getCookie("bgNumber")) > allNum || parseInt(getCookie("bgNumber")) < 0){
-            var bgNum = getRandomNumber(0,allNum);
-            setCookie("bgNumber","0");
-        }
-        else{
-            var bgNum = parseInt(getCookie("bgNumber")) - 1;
-        }
+    //     if(getCookie("bgNumber") == null || parseInt(getCookie("bgNumber")) > allNum || parseInt(getCookie("bgNumber")) < 0){
+    //         var bgNum = getRandomNumber(0,allNum);
+    //         setCookie("bgNumber","0");
+    //     }
+    //     else{
+    //         var bgNum = parseInt(getCookie("bgNumber")) - 1;
+    //     }
 
-        // var bgNum = getRandomNumber(0,allNum);
-        const bg = document.querySelector('#background')
-        document.getElementById("poster-number").innerText = allNum; //壁纸数量
-        bg.style.backgroundImage = 'url(https://img.picgo.net/2024/04/07/536b9ee68eb212bfdb0cc47d5740e35f15030057601986d40101b9.jpeg)';
+    //     // var bgNum = getRandomNumber(0,allNum);
+    //     const bg = document.querySelector('#background')
+    //     document.getElementById("poster-number").innerText = allNum; //壁纸数量
+    //     bg.style.backgroundImage = 'url()';
 
-        setCookie("bgNumber",(parseInt(getCookie("bgNumber"))+ 1).toString())
-    });
+    //     setCookie("bgNumber",(parseInt(getCookie("bgNumber"))+ 1).toString())
+    // });
     
     fetch(listAddress)
     .then((response) => response.json())
