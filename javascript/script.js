@@ -455,8 +455,17 @@ if(window.location.hash == "#R18-CLOSE"){
 
     if(posterURL){
 
-        document.querySelector('#background').style.backgroundImage = 'url('+posterURL+')'
         document.getElementById("poster-number").innerText = 1;
+
+        const img = new Image();
+        img.onload = function() {
+            document.querySelector('#background').style.backgroundImage = `url(${posterURL})`;
+            document.querySelector('#background').style.opacity = '1';
+        };
+        img.onerror = function() {
+            console.error("图片加载失败");
+        };
+        img.src = posterURL;
 
     }else{ 
 
@@ -484,10 +493,24 @@ if(window.location.hash == "#R18-CLOSE"){
             
             // var bgNum = getRandomNumber(0,allNum);
 
-            document.querySelector('#background').style.backgroundImage = `url(${data['poster'][bgNum]})`
             document.getElementById("poster-number").innerText = allNum; //壁纸数量
+            
+            var posterURL = data['poster'][bgNum];
 
-            setCookie("bgNumber",(parseInt(getCookie("bgNumber"))+ 1).toString())
+            const img = new Image();
+            img.onload = function() {
+                document.querySelector('#background').style.backgroundImage = `url(${posterURL})`;
+                document.querySelector('#background').style.opacity = '1';
+
+                setCookie("bgNumber",(parseInt(getCookie("bgNumber"))+ 1).toString())
+            };
+            img.onerror = function() {
+                console.error("图片加载失败");
+
+                setCookie("bgNumber",(parseInt(getRandomNumber(0,allNum))).toString())
+            };
+            img.src = posterURL;
+
         });
         
     };
