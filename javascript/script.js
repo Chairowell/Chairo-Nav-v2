@@ -365,29 +365,7 @@ if(window.location.hash == "#R18-OPEN"){
 if(window.location.hash == "#R18-CLOSE"){
     setCookie("R18-VIEW","0");
 }
-document.addEventListener('DOMContentLoaded', function () {
-    
-    // fetch(posterAddress)
-    // .then((response) => response.json())
-    // .then((json) => {
-    //     const data = json;
-    //     const allNum = data['poster'].length;
-
-    //     if(getCookie("bgNumber") == null || parseInt(getCookie("bgNumber")) > allNum || parseInt(getCookie("bgNumber")) < 0){
-    //         var bgNum = getRandomNumber(0,allNum);
-    //         setCookie("bgNumber","0");
-    //     }
-    //     else{
-    //         var bgNum = parseInt(getCookie("bgNumber")) - 1;
-    //     }
-
-    //     // var bgNum = getRandomNumber(0,allNum);
-    //     const bg = document.querySelector('#background')
-    //     document.getElementById("poster-number").innerText = allNum; //壁纸数量
-    //     bg.style.backgroundImage = 'url()';
-
-    //     setCookie("bgNumber",(parseInt(getCookie("bgNumber"))+ 1).toString())
-    // });
+// document.addEventListener('DOMContentLoaded', function () {
     
     fetch(listAddress)
     .then((response) => response.json())
@@ -405,16 +383,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 var link = obj[i][l]["url"];
                 var name = obj[i][l]["name"];
                 var explain = obj[i][l]["explain"];
+                var icon = obj[i][l]["icon"];
                 // 剔除R18
                 if(!explain.indexOf("[R18]") & r18 == "0"){
                     continue;
+                }
+                if(icon){
+                    var linkIcon = `
+                        <img class="link-icon-img" src="${icon}" alt="" loading="lazy">
+                        <!-- <div class="link-icon" style="background-image:url(${icon});"></div> -->
+                    `
+                }else{
+                    var linkIcon = `
+                        <img class="link-icon-img" src="https://api.chairo.cc/get.php?url=${link}" alt="" loading="lazy">
+                        <!-- <div class="link-icon" style="background-image:url(https://api.chairo.cc/get.php?url=${link});"></div> -->
+                    `
                 }
                 if(!explain.indexOf("[++]")){
                     newgroup = `
                         ${newgroup}
                         <div class="link-box" data-umami-event="${link}">
                             <a href="${link}" rel="nofollow noopener noreferrer">
-                                <div class="link-icon" style="background-image:url(https://api.chairo.cc/get.php?url=${link});"></div>
+                                ${linkIcon}
                                 <div class="link-name">${name}</div>
                                 <div class="link-explain">${explain}</div>
                             </a>
@@ -433,7 +423,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     ${linkBox}
                     <div class="link-box" data-umami-event="${link}">
                         <a href="${link}" rel="nofollow noopener noreferrer">
-                            <div class="link-icon" style="background-image:url(https://api.chairo.cc/get.php?url=${link});"></div>
+                            ${linkIcon}
                             <div class="link-name">${name}</div>
                             <div class="link-explain">${explain}</div>
                         </a>
@@ -463,5 +453,44 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("music-number").innerText = maximum - minimum; //歌曲数量
     })
 
-});
+    if(posterURL){
+
+        document.querySelector('#background').style.backgroundImage = 'url('+posterURL+')'
+        document.getElementById("poster-number").innerText = 1;
+
+    }else{ 
+
+        fetch(posterAddress)
+        .then((response) => response.json())
+        .then((json) => {
+            const data = json;
+            const allNum = data['poster'].length;
+
+            // if(getCookie("bgNumber") == null || parseInt(getCookie("bgNumber")) > allNum || parseInt(getCookie("bgNumber")) < 0){
+            //     var bgNum = getRandomNumber(0,allNum);
+            //     setCookie("bgNumber","0");
+            // }
+            // else{
+            //     var bgNum = parseInt(getCookie("bgNumber")) - 1;
+            // }
+            
+            if(getCookie("bgNumber") == null || parseInt(getCookie("bgNumber")) > allNum || parseInt(getCookie("bgNumber")) < 0){
+                var bgNum = getRandomNumber(0,allNum);
+                setCookie("bgNumber", bgNum);
+            }
+            else{
+                var bgNum = parseInt(getCookie("bgNumber")) - 1;
+            }
+            
+            // var bgNum = getRandomNumber(0,allNum);
+
+            document.querySelector('#background').style.backgroundImage = 'url('+data['poster'][bgNum]+')'
+            document.getElementById("poster-number").innerText = allNum; //壁纸数量
+
+            setCookie("bgNumber",(parseInt(getCookie("bgNumber"))+ 1).toString())
+        });
+        
+    };
+
+// });
 
