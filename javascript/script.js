@@ -484,7 +484,7 @@ if(window.location.hash == "#R18-CLOSE"){
             
             // var bgNum = getRandomNumber(0,allNum);
 
-            document.querySelector('#background').style.backgroundImage = 'url('+data['poster'][bgNum]+')'
+            document.querySelector('#background').style.backgroundImage = `url(${data['poster'][bgNum]})`
             document.getElementById("poster-number").innerText = allNum; //壁纸数量
 
             setCookie("bgNumber",(parseInt(getCookie("bgNumber"))+ 1).toString())
