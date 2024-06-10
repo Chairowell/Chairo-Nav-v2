@@ -1,10 +1,11 @@
 {
     "友链":{
-        "1": {"name": "呲哩呲哩","url":"http://www.cilicili.cc","explain":"cilicili 一个神奇的导航站"},
-        "2": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "(●'◡'●)"},
-        "3": {"name": "ARIA-COMPANY","url": "https://aqua-aria.company/","explain": "让人害羞的台词，禁止！","icon": "https://api.chairo.cc/cache/aqua-aria.company.ico"},
-        "4": {"name": "Ycfun","url":"https://www.ycfun.top/","explain":"用爱发电ACG一直在一起"},
-        "5": {"name": "Chnci","url":"https://www.chn.ci/","explain":"感受神秘的美好世界！"}
+        "1": {"name": "ACG链接库","url":"http://link.chairo.cc","explain":"自家网站-内容更全","icon": "https://www.chairo.cc/favicon.png"},
+        "2": {"name": "呲哩呲哩","url":"http://www.cilicili.cc","explain":"cilicili 一个神奇的导航站"},
+        "3": {"name": "饭团动漫","url": "https://acgfta.com/","explain": "(●'◡'●)"},
+        "4": {"name": "ARIA-COMPANY","url": "https://aqua-aria.company/","explain": "让人害羞的台词，禁止！","icon": "https://api.chairo.cc/cache/aqua-aria.company.ico"},
+        "5": {"name": "Ycfun","url":"https://www.ycfun.top/","explain":"用爱发电ACG一直在一起"},
+        "6": {"name": "Chnci","url":"https://www.chn.ci/","explain":"感受神秘的美好世界！"}
     },
     "Animation": {
         "1": {"name": "girigiri愛動漫","url": "https://anime.girigirilove.com/","explain": "无修压制，资源全速度快"},
@@ -62,6 +63,7 @@
         "22": {"name": "H萌娘","url": "https://hmoegirl.com","explain": "[R18][需魔法] 各类H事物检索器"}
     },
     "Tools": {
+        "16": {"name": "Flow","url": "https://www.flowoss.com/zh-CN","explain": "[++] 重新定义ePub阅读器"},
         "1": {"name": "EmojiXD","url": "https://emojixd.com/","explain": "Emoji表情大全，颜文字百科"},
         "2": {"name": "颜文字屋さん","url": "http://kaomojiya.com/","explain": "顔文字一覧"},
         "3": {"name": "Waifu 2x","url": "https://waifu2x.udp.jp/","explain": "卷积神经网络二次元图片放大"},
@@ -85,6 +87,7 @@
         "2": {"name": "触站","url": "https://www.huashi6.com/","explain": "原创画师分享平台"},
         "23": {"name": "Xerocos","url": "https://xerocos.com/","explain": "[R18][需魔法][英文] Ero-COS图收集站"},
         "3": {"name": "LOFTER","url": "https://www.lofter.com/","explain": "[会员制] 专注于图片社交的平台"},
+        "24": {"name": "POTOFU","url": "https://potofu.me/","explain": "[++] [会员制][需魔法][英文] 组织你所有的在线活动"},
         "4": {"name": "Anime pictures","url": "https://anime-pictures.net/","explain": "[英文] 高清动漫图像板"},
         "5": {"name": "Wallpaper Abyss","url": "https://wall.alphacoders.com/","explain": "[英文] 高清壁纸图片站"},
         "6": {"name": "Sakanaaa","url": "https://www.sakanaaa.com/","explain": "ACG壁纸社区"},
@@ -109,9 +112,11 @@
         "3": {"name": "VGMdb","url": "https://vgmdb.net/","explain": "[需魔法][英文] 动漫&游戏音乐CD数据库"},
         "4": {"name": "Vocadb","url": "https://vocadb.net/","explain": "[英文] Vocaloid音乐数据库"},
         "5": {"name": "Touhoudb","url": "https://touhoudb.com/","explain": "[英文] 东方同人音乐数据库"},
+        "19": {"name": "Utaitedb","url": "https://utaitedb.net/","explain": "[++] [英文] 歌手数据库"},
         "7": {"name": "AMQ","url": "https://animemusicquiz.com/","explain": "[需魔法][英文] 听歌猜番！测测你的实力"},
         "17": {"name": "Natalie","url": "https://natalie.mu/music","explain": "新歌发布、现场资讯等音乐新闻"},
         "6": {"name": "OSU! 戳泡泡","url": "https://webosu.online/","explain": "OSU!节奏跃然指上！"},
+        "18": {"name": "Mino","url": "https://catboy.best/","explain": "[++] [英文]OSU 谱面下载"},
         "8": {"name": "猫耳FM","url": "https://www.missevan.com","explain": "有声轻小说，声优聚集地"},
         "9": {"name": "Last.fm","url": "https://www.last.fm/","explain": "[英文] 全球音乐"},
         "10": {"name": "Radio Garden","url": "https://radio.garden/","explain": "[需魔法][英文] 在线全球广播电台"},
@@ -186,6 +191,7 @@
         "1": {"name": "YuC","url": "https://yuc.wiki/","explain": "長門有C，最快最全的新番表"},
         "2": {"name": "Hazx新番表","url": "https://xf.hmacg.cn/","explain": "动漫新番表 | 图片 | Excel"},
         "3": {"name": "Anime News Network","url": "https://www.animenewsnetwork.com/","explain": "[英文] ACG各类新闻资讯"},
+        "16": {"name": "煎蛋","url": "https://jandan.net/","explain": "[++] 地球上没有新鲜事"},
         "4": {"name": "ACG17","url": "https://acg17.com/","explain": "ACG资讯速报"}, 
         "5": {"name": "Animetox","url": "https://www.animetox.com/","explain": "二次元及日本文化最速报"}, 
         "6": {"name": "Anime List","url": "https://acgntaiwan.github.io/Anime-List/","explain": "台北动漫新番表 | 瀑布流 | 简介"},
@@ -221,11 +227,13 @@
         "19": {"name": "ACG艺世界","url": "https://www.acg149.xyz/","explain": "[需魔法] 新的开始"}
     },
     "Games":{
-        "1": {"name": "SteamDB","url": "https://steamdb.info/search/","explain": "[英文] 搜索Steam游戏历史价格"},
         "16": {"name": "Galgamer","url": "https://galgamer.moe/","explain": "[需魔法] Galgame鉴赏分享+下载"},
+        "1": {"name": "SteamDB","url": "https://steamdb.info/search/","explain": "[英文] 搜索Steam游戏历史价格"},
         "2": {"name": "My galgame","url": "https://www.ttloli.com/","explain": "最大的Galgame攻略+汉化下载"},
+        "23": {"name": "绮梦","url": "https://acgs.one/","explain": "[++] 专注分享次元世界"},
         "3": {"name": "桌游合集","url": "https://game.hullqin.cn/","explain": "[可联机]线上线下多人聚会桌游合集"},
         "4": {"name": "Yikm","url": "https://www.yikm.net/","explain": "[可联机]小霸王|红白机|街机游戏|NES在线玩"},
+        "22": {"name": "AI判官","url": "https://judge.yyhutil.com/","explain": "[++] 看看你的对AI图的判断力"},
         "5": {"name": "Watt Toolkit","url": "https://steampp.net/","explain": "原名Steam++ 挂卡、加速、插件工具"},
         "17": {"name": "企鹅物流数据统计","url": "https://penguin-stats.io/","explain": "明日方舟素材掉率统计"},
         "18": {"name": "干员培养表","url": "https://ark-nights.com/","explain": "明日方舟干员培养计算器"},
@@ -266,12 +274,14 @@
         "8": {"name": "广州天闻角川","url": "http://www.gztwkadokawa.com/","explain": "[需魔法] 轻小说|漫画|书籍|杂志购买"},
         "9": {"name": "とらのあな","url": "https://ec.toranoana.jp/","explain": "[需魔法] 同人誌・同人グッズ通販"},
         "10": {"name": "模之屋","url": "https://www.aplaybox.com/","explain": "专业模型创作分享站"},
+        "17": {"name": "診断メーカー","url": "https://shindanmaker.com/","explain": "[++] おもしろ診断投稿サイト"},
         "11": {"name": "Genshin-Start!","url": "https://start.chairo.cc/?start=github.com/Chairowell/web-genshin-start","explain": "原神启动！整活"}
 
     },
     "生肉资源 - 默认需魔法":{
         "1": {"name": "ABEMA","url": "https://abema.tv","explain": "無料動画・24時間無料!"},
         "2": {"name": "ニコニコ","url": "https://www.nicovideo.jp","explain": "日本最大級の動画生放送組"},
+        "8": {"name": "北吹!","url": "https://kitasuiuji.xxxx.jp/","explain": "[++] 響け！ユーフォニアム シリーズ"},
         "3": {"name": "FOD","url": "https://fod.fujitv.co.jp","explain": "人気のアニメ放送中！"},
         "4": {"name": "Hulu","url": "https://www.hulu.jp","explain": "100,000本以上の動画配信や"},
         "5": {"name": "TELASA","url": "https://www.telasa.jp","explain": "アニメ - 映画 - 特撮！"},
