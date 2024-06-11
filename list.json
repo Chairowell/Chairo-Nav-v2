@@ -90,10 +90,11 @@
         "24": {"name": "POTOFU","url": "https://potofu.me/","explain": "[++] [会员制][需魔法][英文] 组织你所有的在线活动"},
         "4": {"name": "Anime pictures","url": "https://anime-pictures.net/","explain": "[英文] 高清动漫图像板"},
         "5": {"name": "Wallpaper Abyss","url": "https://wall.alphacoders.com/","explain": "[英文] 高清壁纸图片站"},
-        "6": {"name": "Sakanaaa","url": "https://www.sakanaaa.com/","explain": "ACG壁纸社区"},
+        "6": {"name": "ACG壁纸站","url": "https://www.acgbizhi.cc/","explain": "[++] ACG壁纸社区"},
         "22": {"name": "Ycfun","url":"https://www.ycfun.top/","explain":"[需魔法] 免费的动漫壁纸网站"},
         "7": {"name": "Chnci","url": "https://www.chnci.cc/","explain": "[会员制] 壁纸站，资源还不错"},
         "10": {"name": "Picrew","url": "https://picrew.me/ja/","explain": "[需魔法] OC捏人，利用画师所给贴图重新捏"},
+        "25": {"name": "萌绘","url": "https://www.moehui.com/","explain": "[++] 漫画教程 萌图线稿"},
         "11": {"name": "Kemono","url": "https://kemono.party/","explain": "[R18][需魔法][英文] 国外知名图片资源站"},
         "12": {"name": "Minitokyo","url": "http://www.minitokyo.net/","explain": "[英文] ACG同人图"},
         "13": {"name": "Shuushuu","url": "https://e-shuushuu.net/","explain": "[英文] 可爱图片告示牌"},
@@ -128,7 +129,10 @@
         "16": {"name": "ASMR盒子","url": "https://asmrbox.xyz/","explain": "[R18][需魔法] 免费海量高品质的ASMR视频音频资源"}
     },
     "Novel & Manga & HBook": {
-        "1": {"name": "Mihon","url": "mihonapp.netlify.app/","explain": "[安卓] 用的最舒服的开源漫画APP"},
+        "1": {"name": "Mihon","url": "https://mihonapp.netlify.app/","explain": "[++] [安卓] 用的最舒服的开源漫画APP"},
+        "34": {"name": "MIRU","url": "https://miru.js.org/","explain": "[++] [安卓][WIN] 多功能媒体娱乐应用"},
+        "33": {"name": "Twiman","url": "https://twiman.net/","explain": "[++] Twitter漫画阅读器"},
+        "39": {"name": "萌书","url": "https://shop.bookof.moe/","explain": "[++] 系列作品随机推荐"},
         "2": {"name": "轻之文库","url": "https://www.linovel.net/","explain": "懂阅读更懂创作的轻小说平台"},
         "3": {"name": "轻之国度","url": "https://www.lightnovel.us/","explain": "专注分享的NACG社群"},
         "4": {"name": "哔哩轻小说","url": "https://www.linovelib.com/","explain": "日本动漫轻小说在线阅读"},
@@ -159,6 +163,10 @@
         "29": {"name": "nhentai-n","url": "https://nhentai.net/","explain": "[R18][需魔法][英文] N站，最大的本子站"},
         "30": {"name": "nhentai-x","url": "https://nhentai.xxx/","explain": "[R18][需魔法][英文] N站镜像站"},
         "31": {"name": "ehentai-i","url": "https://ehentai.to/","explain": "[R18][需魔法][英文] E站本子阅读"},
+        "36": {"name": "JComic","url": "https://jcomic.net/","explain": "[++] [R18][需魔法] H漫本子阅读"},
+        "37": {"name": "Cin","url": "https://cin.cx/","explain": "[++] [R18][需魔法][英文] H漫本子阅读"},
+        "38": {"name": "Cin","url": "https://cin.ac/","explain": "[++] [R18][需魔法][英文] H漫本子阅读备份站"},
+        "35": {"name": "MangaUpdates","url": "https://www.mangaupdates.com/","explain": "[++] [英文] 漫画系列信息"},
         "32": {"name": "禁漫天堂","url": "https://18comic.vip/","explain": "[R18][需魔法] 免費A漫"}
     },
     "Download": {
@@ -179,6 +187,7 @@
         "15": {"name": "E-Hentai","url": "https://e-hentai.org/","explain": "[R18][需魔法][英文] E站 就没有你找不到的ACGN资源"},
         "16": {"name": "EX-hentai","url": "https://exhentai.org/","explain": "[R18][需魔法][英文] Ex站"},
         "17": {"name": "Tokyo Toshokan","url": "https://tokyotosho.org/","explain": "[R18][需魔法][英文] 东京图书馆"},
+        "25": {"name": "Piratebay Proxy","url": "https://piratebayproxy.net/zh/","explain": "[++] 海盗湾代理搜索器"},
         "18": {"name": "Anime Tosho","url": "https://animetosho.org/","explain": "[需魔法][英文] 各类ACG相关资源BT下载(考古系)"},
         "19": {"name": "末日動漫資源庫","url": "https://share.acgnx.net/","explain": "[需魔法] 资源十分齐全"},
         "20": {"name": "末日動漫資源庫(镜像)","url": "https://share.acgnx.se/","explain": "[需魔法] Project AcgnX Torrent Asia"},
@@ -205,7 +214,7 @@
         "14": {"name": "憨憨动漫","url": "https://hhecy.com/","explain": "[需魔法] 动漫新闻"},
         "15": {"name": "扶她404","url": "http://www.futa404.org/","explain": "[需魔法] 动画追番与漫画推荐"}
     },
-    "BBS": {
+    "社区论坛": {
         "1": {"name": "NGA玩家社区","url": "https://bbs.nga.cn/","explain": "国内最大的玩家社区 | 成分很杂"},
         "2": {"name": "Bangumi","url": "https://bgm.tv/","explain": "番组计划 | ACGN社区"},
         "3": {"name": "无差别同人站","url": "https://www.allcpp.cn/allcpp/index.do","explain": "同人社区"},
@@ -222,8 +231,9 @@
         "14": {"name": "Notifier","url": "https://notify.moe/","explain": "[英文] 国外的知名ACG社区"},
         "15": {"name": "kitsu.io","url": "https://kitsu.io/explore/anime","explain": "[英文] 国外的知名ACG社区"},
         "16": {"name": "天使动漫论坛","url": "https://www.tsdm39.net/","explain": "[需魔法] 梦开始的地方"},
-        "17": {"name": "南+ South Plus","url": "https://www.south-plus.net/","explain": "[需魔法] 梦开始的地方"},
+        "17": {"name": "紳士の庭","url": "https://gmgard.com/","explain": "[++] [需魔法] 士们的二次元资源分享交流平台方"},
         "18": {"name": "FFF团","url": "https://www.fffdann.com/","explain": "[需魔法] 基于兴趣驱动的ACG社区"},
+        "20": {"name": "ACG中文社区","url": "https://www.acgbbs.net/","explain": "[++] 时间并不存在，存在的只有此刻"},
         "19": {"name": "ACG艺世界","url": "https://www.acg149.xyz/","explain": "[需魔法] 新的开始"}
     },
     "Games":{
@@ -231,9 +241,12 @@
         "1": {"name": "SteamDB","url": "https://steamdb.info/search/","explain": "[英文] 搜索Steam游戏历史价格"},
         "2": {"name": "My galgame","url": "https://www.ttloli.com/","explain": "最大的Galgame攻略+汉化下载"},
         "23": {"name": "绮梦","url": "https://acgs.one/","explain": "[++] 专注分享次元世界"},
+        "24": {"name": "绘谜","url": "https://enazo.cn/","explain": "[++] 你画我猜,支持板绘,超多主题"},
+        "26": {"name": "VNdb","url": "https://vndb.org/","explain": "[++] [英文] 视觉小说信息综合数据库"},
         "3": {"name": "桌游合集","url": "https://game.hullqin.cn/","explain": "[可联机]线上线下多人聚会桌游合集"},
         "4": {"name": "Yikm","url": "https://www.yikm.net/","explain": "[可联机]小霸王|红白机|街机游戏|NES在线玩"},
         "22": {"name": "AI判官","url": "https://judge.yyhutil.com/","explain": "[++] 看看你的对AI图的判断力"},
+        "25": {"name": "Switch520","url": "https://www.gamer520.com/","explain": "[++] PC/Switch/PS5游戏下载"},
         "5": {"name": "Watt Toolkit","url": "https://steampp.net/","explain": "原名Steam++ 挂卡、加速、插件工具"},
         "17": {"name": "企鹅物流数据统计","url": "https://penguin-stats.io/","explain": "明日方舟素材掉率统计"},
         "18": {"name": "干员培养表","url": "https://ark-nights.com/","explain": "明日方舟干员培养计算器"},
@@ -253,14 +266,15 @@
     },
     "卡牌 · 桌游 · 跑团":{
         "1": {"name": "异界群敌","url": "http://zxcard.yimieji.com/","explain": "Z/X卡牌查卡器"},
+        "6": {"name": "YGOPro2","url": "https://ygopro2.com/download","explain": "[++] 游戏王YGOPro2下载"},
         "2": {"name": "百鸽","url": "https://ygocdb.com/","explain": "游戏王卡片查询工具"},
         "3": {"name": "Yugioh Card","url": "https://db.yugioh-card-cn.com/","explain": "游戏王卡牌查卡器"},
         "4": {"name": "我们的OCG","url": "https://www.ourocg.cn/","explain": "游戏王卡牌查卡器"},
         "5": {"name": "DB.DUELMETA","url": "https://db.duelmeta.com/","explain": "上位卡组库"}
     },
-    "Shopping & Other":{
+    "购物 & 其他":{
         "15": {"name": "煤炉","url": "https://jp.mercari.com/","explain": "[需魔法] 知名日本二手交易平台"},
-        "1": {"name": "Masadora","url": "https://www.masadora.jp/","explain": "[破产已死] 魔法集市，海淘代购同人周边"},
+        "1": {"name": "piapro","url": "https://piapro.jp/","explain": "[++] 听见！看见！使用！受承认！"},
         "16": {"name": "CDJapan","url": "https://www.cdjapan.co.jp/","explain": "日本CD-DVD购买交易平台"},
         "12": {"name": "HOYOYO","url": "https://cn.hoyoyo.com/index~index.html","explain": "一站式日本代购服务"},
         "13": {"name": "千纸鹤","url": "https://ch.sendico.com/","explain": "专业的日本海淘代购"},
@@ -270,6 +284,9 @@
         "4": {"name": "あみあみ","url": "https://www.amiami.jp/","explain": "同人誌通販・オンライン本店"},
         "5": {"name": "メロンブックス","url": "https://www.melonbooks.co.jp/","explain": "同人誌通販・同人ゲームや漫画の販売購入"},
         "6": {"name": "Alphamax","url": "https://alphamax.jp/zh-CN/","explain": "同人誌通販"},
+        "20": {"name": "BOOKOF商店","url": "https://bookof.hk/","explain": "[++] 书籍周边特典出售"},
+        "18": {"name": "Fantia","url": "https://fantia.jp/","explain": "[++] 创作者支援平台"},
+        "19": {"name": "Toranoana","url": "https://lp.toranoana.shop/fair/super/","explain": "[++] とらのあな通販 超お得祭！"},
         "7": {"name": "F:NEX","url": "https://fnex.jp/","explain": "同人誌・同人グッズ通販"},
         "8": {"name": "广州天闻角川","url": "http://www.gztwkadokawa.com/","explain": "[需魔法] 轻小说|漫画|书籍|杂志购买"},
         "9": {"name": "とらのあな","url": "https://ec.toranoana.jp/","explain": "[需魔法] 同人誌・同人グッズ通販"},

@@ -399,7 +399,7 @@ if(window.location.hash == "#R18-CLOSE"){
                         <!-- <div class="link-icon" style="background-image:url(https://api.chairo.cc/get.php?url=${link});"></div> -->
                     `
                 }
-                if(!explain.indexOf("[++]")){
+                if(!explain.indexOf("[++]") && !explain.includes("[R18]")){
                     newgroup = `
                         ${newgroup}
                         <div class="link-box" data-umami-event="${link}">
