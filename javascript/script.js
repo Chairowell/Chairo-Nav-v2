@@ -365,6 +365,14 @@ if(window.location.hash == "#R18-OPEN"){
 if(window.location.hash == "#R18-CLOSE"){
     setCookie("R18-VIEW","0");
 }
+function removeProtocol(url) {
+    const parsedUrl = new URL(url);
+    
+    // 构建新的URL，去除协议部分
+    const cleanedUrl = parsedUrl.hostname + parsedUrl.pathname + parsedUrl.search + parsedUrl.hash;
+    
+    return cleanedUrl;
+}
 // document.addEventListener('DOMContentLoaded', function () {
     
     fetch(listAddress)
@@ -384,19 +392,21 @@ if(window.location.hash == "#R18-CLOSE"){
                 var name = obj[i][l]["name"];
                 var explain = obj[i][l]["explain"];
                 var icon = obj[i][l]["icon"];
+                var favicon = removeProtocol(link);
+                var show =obj[i][l]["show"];
                 // 剔除R18
-                if(!explain.indexOf("[R18]") & r18 == "0"){
+                if(!explain.indexOf("[R18]") & r18 == "0" | show == "x"){
                     continue;
                 }
                 if(icon){
                     var linkIcon = `
-                        <img class="link-icon-img" src="${icon}" alt="" loading="lazy">
+                        <img class="link-icon-img" src="${icon}" alt="" loading="lazy" onerror="this.onerror=null;this.src='./nan.png';">
                         <!-- <div class="link-icon" style="background-image:url(${icon});"></div> -->
                     `
                 }else{
                     var linkIcon = `
-                        <img class="link-icon-img" src="https://api.chairo.cc/get.php?url=${link}" alt="" loading="lazy">
-                        <!-- <div class="link-icon" style="background-image:url(https://api.chairo.cc/get.php?url=${link});"></div> -->
+                        <img class="link-icon-img" src="https://api.iowen.cn/favicon/${favicon}.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='./nan.png';">
+                        <!-- <div class="link-icon" style="background-image:url(https://api.iowen.cn/favicon/${favicon}.png);"></div> -->
                     `
                 }
                 if(!explain.indexOf("[++]") && !explain.includes("[R18]")){
