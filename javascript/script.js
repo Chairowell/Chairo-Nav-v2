@@ -356,15 +356,28 @@ function checkTime(obj,tim){
     }
 }
 
+// 获取当前网址
+const currentUrl = window.location.href;
+
+// 创建 URL 对象
+const url = new URL(currentUrl);
+
+// 获取查询参数
+const queryParams = url.searchParams;
+
+const r18 = queryParams.get('r18');
+const live = queryParams.get('live');
+
 if(getCookie("R18-VIEW") == null){
     setCookie("R18-VIEW","0");
 }
-if(window.location.hash == "#R18-OPEN"){
+if(window.location.hash == "#R18-OPEN" || r18 == "open"){
     setCookie("R18-VIEW","1");
 }
-if(window.location.hash == "#R18-CLOSE"){
+if(window.location.hash == "#R18-CLOSE" || r18 == "close"){
     setCookie("R18-VIEW","0");
 }
+
 function removeProtocol(url) {
     const parsedUrl = new URL(url);
     
@@ -462,6 +475,21 @@ function removeProtocol(url) {
         document.getElementById("url-number").innerText = urlnum; //网址数量
         document.getElementById("music-number").innerText = maximum - minimum; //歌曲数量
     })
+
+    if(live){
+        const video = document.createElement('video');
+        video.id = 'bg-video';
+        if(live == "4k"){
+            video.src = videoAddress;
+        }else{
+            video.src = live;
+        }
+        video.muted = true;
+        video.loop = true;
+        video.autoplay = true;
+        video.controls = false;
+        document.getElementById("background").appendChild(video); // 将视频元素添加到背景
+    }
 
     if(posterURL){
 

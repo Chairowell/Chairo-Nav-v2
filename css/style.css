@@ -92,7 +92,7 @@ body::-webkit-scrollbar-track{
 /* 背景部分 */
 
 #background{
-	z-index: -1;
+	z-index: -3;
 	width: 100%;
 	height: 100vh;
 	position: fixed;
@@ -110,7 +110,18 @@ body::-webkit-scrollbar-track{
 #bg-cover{
 	width: 100%;
 	height: 100%;
+	z-index: -1;
 	/* animation: cover forwards 1.6s; */
+}
+#bg-video{
+    height: 100vh; /* 使视频高度填满视口 */
+    width: 100vw; /* 使视频宽度填满视口 */
+    position: fixed; /* 固定定位 */
+    top: 0; /* 顶部对齐 */
+    left: 50%; /* 左边距50%以便居中 */
+    transform: translateX(-50%); /* 向左移动自身宽度的一半以完成居中 */
+    z-index: -2; /* 确保在其他元素后面 */
+    object-fit: cover; /* 使视频像背景图一样填充 */
 }
 @keyframes cover{
 	from{
