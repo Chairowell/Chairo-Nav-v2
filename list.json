@@ -125,7 +125,8 @@
         "25": {"name": "Sankakucomplex","url": "https://chan.sankakucomplex.com/cn/","explain": "[R18][需魔法][英文] 同类型图片采集站"}
     },
     "Music & ASMR": {
-        "1": {"name": "Bui~","url": "https://biu.moe","explain": "收录和下载超高质量ACG音乐","show":"x"},
+        "21": {"name": "Bui~","url": "https://biu.moe","explain": "收录和下载超高质量ACG音乐","show":"x"},
+        "1": {"name": "ACG向 | Ciallo～(∠・ω< )⌒★","url": "https://music.163.com/#/playlist?id=8070707258","explain": "[++] 本歌单收录 动画OP、ED、插曲，游戏OST，各类梗曲","icon":"https://p1.music.126.net/wfMS5Oy4CMlYuCP5e4dWDg==/109951169148613850.jpg"},
         "20": {"name": "HiFiNi","url": "https://www.hifini.com/","explain": "[++] 下载HiFi音乐"},
         "2": {"name": "BeatStage","url": "https://www.beatstage.com","explain": "国内第一个开放式网页音游"},
         "3": {"name": "VGMdb","url": "https://vgmdb.net/","explain": "[需魔法][英文] 动漫&游戏音乐CD数据库"},
