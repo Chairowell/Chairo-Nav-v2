@@ -476,19 +476,24 @@ function removeProtocol(url) {
         document.getElementById("music-number").innerText = maximum - minimum; //歌曲数量
     })
 
-    if(live){
+    if(live != "close" || getCookie("live") != "close"){
         const video = document.createElement('video');
         video.id = 'bg-video';
         if(live == "4k"){
             video.src = videoAddress;
+            setCookie("live", videoAddress);
         }else{
-            video.src = live;
+            video.src = live || getCookie("live");
+            setCookie("live", live);
         }
         video.muted = true;
         video.loop = true;
         video.autoplay = true;
         video.controls = false;
         document.getElementById("background").appendChild(video); // 将视频元素添加到背景
+    }
+    if(live == "close"){
+        setCookie("live", "close");
     }
 
     if(posterURL){
