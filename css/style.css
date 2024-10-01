@@ -505,6 +505,13 @@ nav a:hover{
 	text-shadow: 2px 2px 1px #000;
     font-weight: 600;
 	line-height: 32px;
+	letter-spacing: .5px;
+    white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .link-explain{
     width: calc(100% - 42px);
