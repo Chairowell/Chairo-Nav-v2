@@ -405,7 +405,8 @@ function removeProtocol(url) {
                 var name = obj[i][l]["name"];
                 var explain = obj[i][l]["explain"];
                 var icon = obj[i][l]["icon"];
-                var favicon = removeProtocol(link);
+                // var favicon = link;
+                var favicon = removeProtocol(link).replace('/','');
                 var show =obj[i][l]["show"];
                 // 剔除R18
                 if(!explain.indexOf("[R18]") & r18 == "0" | show == "x"){
@@ -418,8 +419,8 @@ function removeProtocol(url) {
                     `
                 }else{
                     var linkIcon = `
-                        <img class="link-icon-img" src="https://api.iowen.cn/favicon/${favicon}.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='./nan.png';">
-                        <!-- <div class="link-icon" style="background-image:url(https://api.iowen.cn/favicon/${favicon}.png);"></div> -->
+                        <img class="link-icon-img" src="https://icon.horse/icon/${favicon}" alt="" loading="lazy" onerror="this.onerror=null;this.src='./nan.png';">
+                        <!-- <div class="link-icon" style="background-image:url(https://api.chairo.cc/${favicon}.ico);"></div> -->
                     `
                 }
                 if(!explain.indexOf("[++]") && !explain.includes("[R18]")){

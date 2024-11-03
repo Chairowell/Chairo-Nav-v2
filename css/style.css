@@ -498,6 +498,7 @@ nav a:hover{
     background-size: cover;
 } */
 .link-name{
+	width: calc(100% - 48px);
 	float: left;
     color: #fff;
     margin: 0 0 6px 12px;
