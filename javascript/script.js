@@ -419,7 +419,7 @@ function removeProtocol(url) {
                     `
                 }else{
                     var linkIcon = `
-                        <img class="link-icon-img" src="https://icon.horse/icon/${favicon}" alt="" loading="lazy" onerror="this.onerror=null;this.src='./nan.png';">
+                        <img class="link-icon-img" src="https://api.hhhe.cn/favicon/${favicon}.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='./nan.png';">
                         <!-- <div class="link-icon" style="background-image:url(https://api.chairo.cc/${favicon}.ico);"></div> -->
                     `
                 }
