@@ -300,7 +300,7 @@
     },
     "卡牌 · 桌游 · 跑团":{
         "1": {"name": "NEOS","url": "https://neos.moecube.com/","explain": "游戏王网页端对战平台"},
-        "2": {"name": "异界群敌","url": "http://zxcard.yimieji.com/","explain": "Z/X卡牌查卡器"},
+        "2": {"name": "异界群敌","url": "http://zxcard.yimieji.com/","explain": "[需魔法] Z/X卡牌查卡器"},
         "3": {"name": "YGOPro2","url": "https://ygopro2.com/download","explain": "游戏王YGOPro2下载"},
         "4": {"name": "百鸽","url": "https://ygocdb.com/","explain": "游戏王卡片查询工具"},
         "5": {"name": "Yugioh Card","url": "https://db.yugioh-card-cn.com/","explain": "游戏王卡牌查卡器"},
@@ -329,7 +329,7 @@
         "22": {"name": "Toy Okoku","url": "https://toyokoku.com.au/","explain": "[需魔法][英文] GK 手办贩卖"},
         "18": {"name": "模之屋","url": "https://www.aplaybox.com/","explain": "专业模型创作分享站"},
         "19": {"name": "診断メーカー","url": "https://shindanmaker.com/","explain": "おもしろ診断投稿サイト"},
-        "21": {"name": "Personality Database","url": "https://www.getpersonality.com/zh","explain": "书影音中的MBTI"},
+        "21": {"name": "Personality Database","url": "https://www.getpersonality.com/zh","explain": "[需魔法] 书影音中的MBTI"},
         "20": {"name": "Genshin-Start!","url": "https://start.chairo.cc/?start=github.com/Chairowell/web-genshin-start","explain": "原神启动！整活","icon":"https://start.chairo.cc/logo.ico"}
     },
     "生肉资源 - 默认需魔法":{
