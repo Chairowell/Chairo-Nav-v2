@@ -1,9 +1,3 @@
-// 音乐控制参数
-// const album_cover_local = "./favicon.jpg";
-// 定义sid的最小值和最大值
-// const minimum = 2;
-// const maximum = 44337;
-
 // 页面背景滚动变化遮罩(这玩意真的超级消耗资源，如果可以还是用纯CSS的方法会更好)
 window.onscroll = function () {
     //为了保证兼容性，这里取两个值，哪个有值取哪一个
@@ -54,242 +48,7 @@ function getCookie(name) {
     return null;
 }
 
-// 音乐控制部分
-function getMusicInfoFromBiu(sid) {
-    const apiUrl = `https://web.biu.moe/Song/playSID/sid/${sid}`;
-    const coverApiUrl = `https://web.biu.moe/Song/getCover/sid/${sid}`;
 
-    // 创建加载中的提示元素
-    const loadingElement = document.createElement("div");
-    loadingElement.className = "music-link";
-    loadingElement.textContent = "正在加载中...";
-
-    // 将加载中的提示元素添加到songInfoDiv中
-    const songInfoDiv = document.getElementById("songInfo");
-    songInfoDiv.innerHTML = "";
-    songInfoDiv.appendChild(loadingElement);
-
-    const fetchMusicInfo = fetch(apiUrl).then(response => {
-        if (!response.ok) {
-            throw new Error("获取音乐信息失败");
-        }
-        return response.json();
-    });
-
-    const fetchCover = fetch(coverApiUrl).then(response => {
-        if (!response.ok) {
-            throw new Error("获取音乐封面失败");
-        }
-        return response.json();
-    });
-
-    return Promise.all([fetchMusicInfo, fetchCover])
-        .then(([musicInfoData, coverData]) => {
-            if (!musicInfoData.status || !coverData.status) {
-                throw new Error("失败了.TwT.");
-            }
-
-            let musicUrl = musicInfoData.urlinfo.url;
-            // 去掉音乐URL中的转义符
-            musicUrl = musicUrl.replace(/\\/g, '');
-
-            const songId = musicInfoData.info[0];
-            const songName = musicInfoData.info[1];
-            let coverUrl = coverData.url;
-
-            // 如果封面链接是 https:\/\/biu.moe\/Public\/img\/biu.png，使用本地图片
-            if (coverUrl === "https:\/\/biu.moe\/Public\/img\/biu.png") {
-                coverUrl = "../favicon.png"
-                // coverUrl = album_cover_local;
-            }
-
-            // 设置 CSS 的 --album-cover 变量为封面链接
-            document.getElementById("nav-box").style.setProperty("--album-cover", `url(${coverUrl})`);
-
-            const songDiv = document.createElement("div");
-            //是否开启音乐详情链接
-            songDiv.innerHTML = `<div class="music-link" style="animation: boxshake .3s ease-in;"><span class="iconfont icon-music"></span>${songName}</div>`;
-            // songDiv.innerHTML = `<div class="music-link" style="animation: boxshake .3s ease-in;"><span class="iconfont icon-music"></span><a href="https://biu.moe/#/s${songId}">${songName}</a></div>`;
-
-            // 获取音乐播放器元素
-            const musicPlayer = document.getElementById("music");
-            // 将音乐URL放入audio标签的src属性中
-            musicPlayer.src = musicUrl;
-            musicPlayer.volume = 0.08;
-            musicPlayer.addEventListener('loadeddata', function () {
-                const songInfoDiv = document.getElementById("songInfo");
-                songInfoDiv.innerHTML = "";
-                songInfoDiv.appendChild(songDiv);
-            });
-            musicPlayer.play();
-
-            const musicInfo = {
-                musicUrl: musicUrl,
-                songId: songId,
-                songName: songName,
-                producer: producer,
-                album: album,
-                coverUrl: coverUrl
-            };
-
-            return musicInfo;
-        })
-        .catch(error => {
-            document.addEventListener('DOMContentLoaded', function () {
-                const failDiv = document.getElementById("fail");
-                failDiv.style.display = "block";
-                failDiv.textContent = error.message;
-            });
-        });
-}
-
-
-// 等待页面加载完成
-document.addEventListener('DOMContentLoaded', function () {
-    // 获取play-mode-box元素和next按钮元素
-    const playModeBox = document.getElementById('play-mode-box');
-    const nextButton = document.getElementById('next');
-
-    // 从Cookie中获取当前播放模式的值，如果不存在则默认为'shuffle'
-    let currentMode = getCookie('currentMode') || 'shuffle';
-
-    // 从Cookie中获取sid的值，如果不存在则随机生成一个初始的sid
-    let sid = getCookie('sid');
-    if (!sid || sid == 1) {
-        sid = getRandomNumber(minimum, maximum, 0);
-        setCookie('sid', sid); // 保存初始的sid到Cookie中
-    } else {
-        sid = parseInt(sid);
-    }
-
-    // 创建子元素数组，按照需要循环显示的顺序排列
-    const playModes = [{
-            id: 'shuffle',
-            className: 'play-mode iconfont icon-shuffle',
-            title: '随机播放'
-        },
-        {
-            id: 'order',
-            className: 'play-mode iconfont icon-order',
-            title: '顺序播放'
-        },
-        {
-            id: 'loop',
-            className: 'play-mode iconfont icon-loop',
-            title: '单曲循环'
-        }
-    ];
-
-    // 根据当前播放模式设置初始显示的子元素
-    const initialPlayMode = playModes.find(mode => mode.id === currentMode);
-    const initialElement = document.createElement('div');
-    initialElement.id = initialPlayMode.id;
-    initialElement.className = initialPlayMode.className;
-    initialElement.title = initialPlayMode.title;
-    playModeBox.appendChild(initialElement);
-
-    // 添加点击事件监听器
-    playModeBox.addEventListener('click', function () {
-        // 根据当前播放模式找到下一个播放模式
-        const currentIndex = playModes.findIndex(mode => mode.id === currentMode);
-        const nextIndex = (currentIndex + 1) % playModes.length;
-        currentMode = playModes[nextIndex].id;
-
-        // 删除原有的子元素
-        playModeBox.innerHTML = '';
-
-        // 创建一个新的子元素，并设置为当前播放模式对应的子元素
-        const newElement = document.createElement('div');
-        newElement.id = currentMode;
-        newElement.className = playModes[nextIndex].className;
-        newElement.title = playModes[nextIndex].title;
-        playModeBox.appendChild(newElement);
-
-        // 当currentMode为loop时，给audio#music标签添加loop属性
-        const musicPlayer = document.getElementById('music');
-        if (currentMode === 'loop') {
-            musicPlayer.setAttribute('loop', 'true');
-        } else {
-            musicPlayer.removeAttribute('loop');
-        }
-        // 保存切换后的播放模式到Cookie中
-        setCookie('currentMode', currentMode);
-    });
-
-    // 监听audio#music的播放事件
-    const musicPlayer = document.getElementById('music');
-    musicPlayer.addEventListener('ended', function () {
-        // 播放完时根据当前播放模式切换到下一首歌曲
-        if (currentMode === 'shuffle') {
-            do {
-                sid = getRandomNumber(minimum, maximum, 0);
-            } while (sid === musicPlayer.dataset.sid); // 如果新的sid和当前的sid相同，则重新生成直到不相同
-        } else if (currentMode === 'order' || currentMode === 'loop') {
-            sid++;
-            if (sid >= maximum) {
-                sid = minimum;
-            }
-        }
-
-        console.log('当前播放模式：', currentMode, "当前sid值：", musicPlayer.dataset.sid, "下一个sid值", sid);
-        musicPlayer.dataset.sid = sid; // 将sid保存在data属性中，以便后续判断是否需要重新生成sid
-        // 更新Cookie中的sid值
-        setCookie('sid', musicPlayer.dataset.sid);
-        // 更新歌曲信息
-        getMusicInfoFromBiu(musicPlayer.dataset.sid);
-    });
-
-    // 监听next按钮的点击事件
-    nextButton.addEventListener('click', function () {
-        // 点击时根据当前播放模式切换到下一首歌曲
-        if (currentMode === 'shuffle') {
-            do {
-                sid = getRandomNumber(minimum, maximum, 0);
-            } while (sid === musicPlayer.dataset.sid); // 如果新的sid和当前的sid相同，则重新生成直到不相同
-        } else if (currentMode === 'order' || currentMode === 'loop') {
-            sid++;
-            if (sid >= maximum) {
-                sid = minimum;
-            }
-        }
-
-        console.log('当前播放模式：', currentMode, "当前sid值：", musicPlayer.dataset.sid, "下一个sid值", sid);
-        musicPlayer.dataset.sid = sid;
-        // 更新Cookie中的sid值
-        setCookie('sid', musicPlayer.dataset.sid);
-        // 更新歌曲信息
-        getMusicInfoFromBiu(musicPlayer.dataset.sid);
-    });
-
-    const playButton = document.getElementById('play');
-    const pauseButton = document.getElementById('pause');
-    let isFirstPlay = true;
-
-    // 为播放按钮添加点击事件监听器，调用play()方法播放音乐
-    playButton.addEventListener('click', function () {
-        if (isFirstPlay) {
-            // 首次加载音乐
-            getMusicInfoFromBiu(sid);
-        }
-        isFirstPlay = false;
-        document.getElementById('music').play();
-    });
-
-    // 为暂停按钮添加点击事件监听器，调用pause()方法暂停音乐
-    pauseButton.addEventListener('click', function () {
-        document.getElementById('music').pause();
-    });
-
-    document.getElementById('music').addEventListener('play', function () {
-        playButton.style.display = "none";
-        pauseButton.style.display = "block"
-    });
-
-    document.getElementById('music').addEventListener('pause', function () {
-        pauseButton.style.display = "none"
-        playButton.style.display = "block";
-    });
-});
 
 // 时间显示部分
 function getCurrentTime() {
@@ -419,7 +178,7 @@ function removeProtocol(url) {
                     `
                 }else{
                     var linkIcon = `
-                        <img class="link-icon-img" src="https://api.hhhe.cn/favicon/${favicon}.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='./nan.png';">
+                        <img class="link-icon-img" src="https://api.chairo.cc/${favicon}.ico" alt="" loading="lazy" onerror="this.onerror=null;this.src='./nan.png';">
                         <!-- <div class="link-icon" style="background-image:url(https://api.chairo.cc/${favicon}.ico);"></div> -->
                     `
                 }
@@ -474,7 +233,6 @@ function removeProtocol(url) {
         `
         box.innerHTML = group;
         document.getElementById("url-number").innerText = urlnum; //网址数量
-        document.getElementById("music-number").innerText = maximum - minimum; //歌曲数量
     })
 
     if(live != "close" || getCookie("live") != "close"){

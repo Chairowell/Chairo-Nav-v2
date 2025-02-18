@@ -35,33 +35,6 @@
     <div class="navigation-bar">
         <div id="nav-box">
 
-            <div class="album-box">
-                <div class="album-cover"></div>
-                <div id="play-mode-box"></div>
-            </div>
-            <div class="music-controls" style="display: none;">
-                <!-- <div id="volume-bar" title="66%">
-                    <div id="volume-value" style="height: 66%;"></div>
-                </div> -->
-                <div id="play" class="iconfont icon-play" title="播放"></div>
-                <div id="pause" class="iconfont icon-pause" title="暂停"></div>
-                <div id="next" class="iconfont icon-next" title="下一首"></div>
-            </div>
-            <div id="muisc-box">
-                <audio id="music"></audio>
-            </div>
-
-            <!-- <div class="search-box">
-                <form id="search-form">
-                    <div class="search-content">
-                        <input type="text" id="search-input" placeholder="Enter keyword" autocomplete="off">
-                    </div>
-                    <div class="search-btn" id="search-button">
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.3451 15.2003C16.6377 15.4915 16.4752 15.772 16.1934 16.0632C16.15 16.1279 16.0958 16.1818 16.0525 16.2249C15.7707 16.473 15.4456 16.624 15.1854 16.3652L11.6848 12.8815C10.4709 13.8198 8.97529 14.3267 7.44714 14.3267C3.62134 14.3267 0.5 11.2314 0.5 7.41337C0.5 3.60616 3.6105 0.5 7.44714 0.5C11.2729 0.5 14.3943 3.59538 14.3943 7.41337C14.3943 8.98802 13.8524 10.5087 12.8661 11.7383L16.3451 15.2003ZM2.13647 7.4026C2.13647 10.3146 4.52083 12.6766 7.43624 12.6766C10.3517 12.6766 12.736 10.3146 12.736 7.4026C12.736 4.49058 10.3517 2.1286 7.43624 2.1286C4.50999 2.1286 2.13647 4.50136 2.13647 7.4026Z" fill="currentColor"></path></svg>
-                    </div>
-                </form>
-            </div> -->
-
             <div class="time-box">
                 <div id="time"></div>
                 <div id="dayOfWeek"></div>
@@ -91,7 +64,7 @@
                 <h2>新年快乐，万事顺意 o(≧▽≦)o</h2>
                 <h3>更新时间：2025-01-28 共<span id="url-number"></span>个网址 
                     <span id="poster-number"></span>张壁纸 
-                    <!-- <span id="music-number"></span>首歌曲 -->
+                    <span id="music-number">1000</span>首歌曲
                 </h3>
             </div>
         </div>
@@ -124,8 +97,6 @@
     
     
     <script>
-        const minimum = 2;
-        const maximum = 45082;
         const posterAddress = './poster.json';
         const posterURL = '';
         // const posterURL = 'https://api.rls.ovh/adaptive';
@@ -168,7 +139,59 @@
         .CboxOpenBtn:after {
             content: '留言板';
         }
+
     </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script> </head>
+    <div id="aplayer"></div>
+    <script>
+        async function getPlaylistSongs(playlistId, position = 0, amount = 1000) {
+            const url = `https://ncm.nekogan.com/playlist/track/all?id=${playlistId}&limit=${amount}&offset=${position}`;
+        
+            try {
+                const response = await fetch(url);
+        
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+        
+                const data = await response.json();
+        
+                if (data.code === 200) {
+                    const songs = data.songs.map(songData => ({
+                        name: songData.name,
+                        song_id: songData.id,
+                        artist: songData.ar[0].name,
+                        cover: songData.al.picUrl,
+                        url: `https://music.163.com/song/media/outer/url?id=${songData.id}` // 获取音乐播放链接
+                    }));
+                    return songs;
+                } else {
+                    console.error(`API 请求失败: 状态码 ${data.code}`);
+                    return null;
+                }
+            } catch (error) {
+                console.error(`请求发生错误: ${error}`);
+                return null;
+            }
+        }
+        
+        const playlistId = 8070707258; // 替换为实际的歌单ID
+        
+        getPlaylistSongs(playlistId)
+            .then(songs => {
+                if (songs) {
+                    const ap = new APlayer({
+                        container: document.getElementById('aplayer'),
+                        fixed: true, // 是否固定在页面顶部
+                        autoplay: false, // 是否自动播放
+                        audio: songs // 音乐信息数组
+                    });
+                }
+            });
+    </script>
 
 </body>
 

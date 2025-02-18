@@ -148,7 +148,7 @@ body::-webkit-scrollbar-track{
 	height: 54px;
 
 	/* 居中并设置边距48px */
-	width: calc(100% - 48px * 2);
+	width: 480px;
 	margin: 12px auto;
 	/* margin-bottom: 0; */
 
@@ -607,9 +607,9 @@ nav a:hover{
 @media screen and (max-width: 768px){
 	#nav-box{
 		/* 居中并设置边距12px */
-		width: calc(100% - 12px * 2);
+		width: calc(100% - 48px * 2);
 		margin: 12px auto;
-		/* margin-bottom: 0; */
+		margin-bottom: 66px;
 	}
 	.music-link,#fail{
 		width: 60%;
@@ -630,12 +630,22 @@ nav a:hover{
 	.link-box{
         width: calc(40% - 10px);
     }
-	
+
 }
 @media screen and (max-width: 533px){
 	.link-box{
-        width: calc(100% - 10px);
+        width: calc(100% - 6px);
     }
+	.CboxButton{
+		bottom: 66px;
+	}
+	.time-box{
+		display: none;
+	}
+	#nav-box{
+		backdrop-filter: none;
+		box-shadow: none;
+	}
 }
 @media screen and (max-width: 387px){
 	.nav-a{
