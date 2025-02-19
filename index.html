@@ -186,6 +186,10 @@
                     const ap = new APlayer({
                         container: document.getElementById('aplayer'),
                         fixed: true, // 是否固定在页面顶部
+                        loop: 'all', // 循环播放类型
+                        order: 'random', // 歌单排序类型
+                        preload: 'auto', // 预加载策略
+                        volume: 0.7, // 默认音量
                         autoplay: false, // 是否自动播放
                         audio: songs // 音乐信息数组
                     });
