@@ -6,6 +6,12 @@ Disallow: /javascript/
 Disallow: /list.json
 Disallow: /poster.json
 Disallow: /tool.html
+User-agent: Googlebot
+Disallow: /css/
+Disallow: /javascript/
+Disallow: /list.json
+Disallow: /poster.json
+Disallow: /tool.html
 User-agent: Yandex
 Disallow: /css/
 Disallow: /javascript/
@@ -22,8 +28,6 @@ User-agent: 360Spider
 Disallow: /
 User-agent: YisouSpider
 Disallow: /
-User-agent: Googlebot
-Disallow: /
 User-agent: teoma
 Disallow: /
 User-agent: ia_archiver
@@ -35,6 +39,8 @@ Disallow: /
 User-agent: Gigabot
 Disallow: /
 User-agent: Mediapartners-Google
+Disallow: /
+User-agent: FofaBot
 Disallow: /
 Crawl-delay: 120
 User-agent: *
