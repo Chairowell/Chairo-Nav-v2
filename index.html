@@ -28,7 +28,7 @@
 
 <body>
 
-    
+
     <div id="songInfo">
         <div id="fail"></div>
     </div>
@@ -62,8 +62,8 @@
             <div class="welcome-text">
                 <h1>Chairo. | 导航站</h1>
                 <h2>o(≧▽≦)o</h2>
-                <h3>更新时间：2025-03-15 共<span id="url-number"></span>个网址 
-                    <span id="poster-number"></span>张壁纸 
+                <h3>更新时间：2025-03-15 共<span id="url-number"></span>个网址
+                    <span id="poster-number"></span>张壁纸
                     <span id="music-number">1000</span>首歌曲
                 </h3>
             </div>
@@ -81,7 +81,7 @@
                     <a href="https://link.chairo.cc/#%E5%8F%8B%E9%93%BE">友链申请</a> ·
                     <a href="https://afdian.com/a/chairowell">赞助我们</a>
                     <!-- · <a href="https://api.rls.ovh/">正在使用第三方壁纸API</a> -->
-                     · <a href="https://www.picgo.net/album/CHAIRO.SGQSy/sub">壁纸下载</a>
+                    · <a href="https://www.picgo.net/album/CHAIRO.SGQSy/sub">壁纸下载</a>
                 </div>
                 <h3>-· 一切都是命运石之门的安排 ·-</h3>
                 <h3><a href="https://icp.gov.moe/?keyword=20229964">萌ICP备20229964号</a></h3>
@@ -94,8 +94,6 @@
         <div id="bg-cover"></div>
     </div>
 
-    
-    
     <script>
         const posterAddress = './poster.json';
         // const posterURL = '';
@@ -106,9 +104,9 @@
 
     <script src="./javascript/script.js"></script>
 
-    <script type='text/javascript' id='clustrmaps'src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff00&w=0&t=n&d=o9YWHIWTDU0-LmCLCGhwJglbMhugBprq1efNvr1D_u0&co=ffffff00&cmo=ffffff00&cmn=ffffff00'></script>
-
-    <!-- <script defer src="https://count.chairo.cc/script.js" data-website-id="a9fce4e7-c559-4766-ac51-a9b5818b4970" data-cache="true"></script> -->
+    <script type='text/javascript' id='clustrmaps'
+        src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff00&w=0&t=n&d=o9YWHIWTDU0-LmCLCGhwJglbMhugBprq1efNvr1D_u0&co=ffffff00&cmo=ffffff00&cmn=ffffff00'>
+    </script>
 
     <script type="text/javascript">
         var _Hasync = _Hasync || [];
@@ -123,13 +121,13 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
         })();
     </script>
-    <noscript><a href="/" target="_blank"><img src="https://sstatic1.histats.com/0.gif?4814398&101" alt="" border="0"></a></noscript>
+    <noscript><a href="/" target="_blank"><img src="https://sstatic1.histats.com/0.gif?4814398&101" alt=""
+                border="0"></a></noscript>
     <script src="https://static.cbox.ws/embed/2.js" async></script>
     <script>
         window['CboxReady'] = function (Cbox) {
             Cbox('button', '3-3532837-iIAlAa');
         }
-
     </script>
     <style>
         .CboxOpenBtn img {
@@ -139,63 +137,20 @@
         .CboxOpenBtn:after {
             content: '留言板';
         }
-
+        .aplayer-info {
+            display: block !important;
+        }
     </style>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
     <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script> </head>
-    <div id="aplayer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
     <script>
-        async function getPlaylistSongs(playlistId, position = 0, amount = 1000) {
-            const url = `https://ncm.nekogan.com/playlist/track/all?id=${playlistId}&limit=${amount}&offset=${position}`;
-        
-            try {
-                const response = await fetch(url);
-        
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-        
-                const data = await response.json();
-        
-                if (data.code === 200) {
-                    const songs = data.songs.map(songData => ({
-                        name: songData.name,
-                        song_id: songData.id,
-                        artist: songData.ar[0].name,
-                        cover: songData.al.picUrl,
-                        url: `https://music.163.com/song/media/outer/url?id=${songData.id}` // 获取音乐播放链接
-                    }));
-                    return songs;
-                } else {
-                    console.error(`API 请求失败: 状态码 ${data.code}`);
-                    return null;
-                }
-            } catch (error) {
-                console.error(`请求发生错误: ${error}`);
-                return null;
-            }
-        }
-        
-        const playlistId = 8070707258; // 替换为实际的歌单ID
-        
-        getPlaylistSongs(playlistId)
-            .then(songs => {
-                if (songs) {
-                    const ap = new APlayer({
-                        container: document.getElementById('aplayer'),
-                        fixed: true, // 是否固定在页面顶部
-                        loop: 'all', // 循环播放类型
-                        order: 'random', // 歌单排序类型
-                        preload: 'auto', // 预加载策略
-                        volume: 0.7, // 默认音量
-                        autoplay: false, // 是否自动播放
-                        audio: songs // 音乐信息数组
-                    });
-                }
-            });
+        var meting_api='https://api.qijieya.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r';
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js server="netease" type="playlist" id="8070707258" fixed="true" mini="false" theme="#a84848" loop="all" order="random" preload="auto" volume="0.5" mutex="true"></meting-js>
+
 
 </body>
 

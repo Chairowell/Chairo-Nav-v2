@@ -159,6 +159,7 @@ body::-webkit-scrollbar-track{
 	box-shadow: 0 0 6px 1px hsla(0, 0%, 0%, 0.5);
 
 	position: relative;
+	bottom: 42px;
 }
 
 /* 音乐部分 */
