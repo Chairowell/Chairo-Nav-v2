@@ -61,7 +61,7 @@
         <div class="welcome">
             <div class="welcome-text">
                 <h1>Chairo. | 导航站</h1>
-                <h2 style="word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap; word-break: break-all;">预祝各位考生能取得自己满意的成绩，加油！</h2>
+                <h2 style="word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap; word-break: break-all;">ヾ(≧▽≦*)o</h2>
                 <h3>更新时间：2026-5-30 共<span id="url-number"></span>个网址
                     <span id="poster-number" style="display: none;"></span>10000+张壁纸
                     <span id="music-number">1000</span>首歌曲
@@ -95,11 +95,46 @@
     </div>
 
     <script>
-        const posterAddress = './poster.json';
-        // const posterURL = '';
-        const posterURL = 'https://api.rls.ovh/adaptive';
+        const posterAddress = 'https://gh-proxy.org/https://raw.githubusercontent.com/chairowell/Pictures-BED/refs/heads/main/poster.json';
+        const posterURL = '';
+        // const posterURL = 'https://api.rls.ovh/adaptive';
         const listAddress = './list.json';
-        const videoAddress = 'https://livewallpaperpc.com/file/the-angel-next-door-spoils-me-rotten-mahiru-shiina.mp4';
+        const videoAddress = 'https://motionbgs.com/media/9647/exusiai-the-legend-seeker.3840x2160.mp4';
+    </script>
+
+    <script defer src="https://analysis.dockv.cc/script.js" data-website-id="11f5ffdf-af9c-4438-a008-f33a7b7d98a9"></script>
+    <script>
+        // 访问统计 - 隐性数据统计
+    function trackVisit() {
+        const today = new Date();
+        const todayStr = today.toISOString().split('T')[0];
+        
+        let visitData = localStorage.getItem('visitStats');
+        
+        if (visitData) {
+            visitData = JSON.parse(visitData);
+        } else {
+            visitData = {
+                totalVisits: 0,
+                firstVisit: todayStr,
+                lastVisit: todayStr,
+                visitDates: []
+            };
+        }
+        
+        // 检查今天是否已访问
+        const todayVisited = visitData.visitDates.includes(todayStr);
+        
+        if (!todayVisited) {
+            visitData.totalVisits++;
+            visitData.visitDates.push(todayStr);
+            visitData.lastVisit = todayStr;
+            localStorage.setItem('visitStats', JSON.stringify(visitData));
+        }
+    }
+
+    // 页面加载时调用统计
+    window.addEventListener('DOMContentLoaded', trackVisit);
     </script>
 
     <script src="./javascript/script.js"></script>

@@ -269,13 +269,13 @@ function removeProtocol(url) {
         };
         img.src = posterURL;
 
-    }else{ 
+    }else if(posterAddress){ 
 
         fetch(posterAddress)
         .then((response) => response.json())
         .then((json) => {
             const data = json;
-            const allNum = data['poster'].length;
+            const allNum = data['poster']['2023-11-C'].length;
 
             // if(getCookie("bgNumber") == null || parseInt(getCookie("bgNumber")) > allNum || parseInt(getCookie("bgNumber")) < 0){
             //     var bgNum = getRandomNumber(0,allNum);
@@ -297,7 +297,8 @@ function removeProtocol(url) {
 
             document.getElementById("poster-number").innerText = allNum; //壁纸数量
             
-            var posterURL = data['poster'][bgNum];
+            // var posterURL = data['poster'][bgNum];
+            var posterURL = `https://gh-proxy.org/https://raw.githubusercontent.com/chairowell/Pictures-BED/main/2023-11-C/${data['poster']['2023-11-C'][bgNum]}`;
 
             const img = new Image();
             img.onload = function() {
